@@ -123,5 +123,11 @@ span{
       border: 5px solid #00ABE1;
         transition: 0.5s ease-in-out;
   }
+  .text{
+    color: #fff;
+  }
+  .titel{
+    color: #fff;
+  }
   
 

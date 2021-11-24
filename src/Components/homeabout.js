@@ -12,8 +12,8 @@ const Homeabout = () => {
                 ...
                 </Col>
                 <Col sm={6}>
-                    <h2>Meet the coder</h2>
-                    <p>Joris is a Front-End Developer based in Belgium Antwerp.
+                    <h2 className="titel">Meet the coder</h2>
+                    <p className="text">Joris is a Front-End Developer based in Belgium Antwerp.
                     he has a serious passion for design and animations.
                     
                     He is also a Dedicated codewars player and a big fan of movies and TV series.
