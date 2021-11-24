@@ -16,7 +16,7 @@ const Routing = () => {
   return(
       <Navbar className="color-nav" expand="lg" variant="dark">
         <Container>
-          <LinkContainer exact to={"/home"}>
+          <LinkContainer exact to={"/"}>
             <Navbar.Brand><img src="./assets/LogoJDRwhite.png" alt="LogoJDR" className="logo" fluid/></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -42,7 +42,7 @@ const Main = () => {
   return (
       <Container className="link">
           <Switch>
-              <Route path="/home" component={Home}/>
+              <Route path="/" component={Home}/>
               <Route path="/about" component={about}/>
               <Route path="/projects" component={projects}/>
               <Route path="/contact" component={contact}/>
