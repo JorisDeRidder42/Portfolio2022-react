@@ -1,24 +1,20 @@
-.app{
-    overflow-y: hidden;
-}
-.container-fluid{
-    background-color: #0D176E;
-    position: relative;
-}
 .link{
     width: 100%;
     max-width: 100vw;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
 }
-.driehoek{
-    position: absolute;
-    width: 100%;
-    height: 8vw;
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 100%);
-    background-color: #0039b1;
+.container-fluid{
+    max-width: 100vw;
+    padding-right: 0;
+    padding-left: 0;
+    overflow-x: hidden;
 }
+
+.bluebackground{
+    background-color: #0D176E;
+}
+
 .blok{
     min-height: 75vh;
     align-items: center;
