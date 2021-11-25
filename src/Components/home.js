@@ -18,7 +18,10 @@ const Home = () => {
                 {/* <Image src={require('Path1.png')} alt="hoofd"/> */}
             </Col>
         </Row>
-    </Container>
+         </Container>
+         {/* <div className="clip">
+            <div className="header"></div>
+        </div>    */}
   <Homeabout/>
   </div>
     )
