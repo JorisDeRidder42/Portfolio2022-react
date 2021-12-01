@@ -47,15 +47,14 @@
     content:" ";    
     width:25%;
     height: 5px;
-    background: rgb(13,23,110);
-    background: linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(0,171,225,1) 100%);
-    background: -moz-linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(0,171,225,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(0,171,225,1) 100%);
-    background: linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(0,171,225,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d176e",endColorstr="#00abe1",GradientType=1);
+    background: rgb(0,255,246);
+    background: -moz-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: -webkit-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1);
  }
 .color-nav{
-    background-color:#0D176E;
+    background-color:#ffff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .logo{
@@ -80,10 +79,13 @@ span{
     padding-top: 1em; 
     font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
-    color: #0D176E;
+    color: #757384;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: #0D176E;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0D176E;
 }
 .navigatiefont{
     font-size: 1.3em;
@@ -101,8 +103,11 @@ span{
     height: 5px;
     bottom: 0;
     left: 0;
-    background: rgb(13,23,110);
-    background: linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(0,171,225,1) 100%);
+    background: rgb(0,255,246);
+    background: -moz-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: -webkit-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1);
    
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
@@ -112,28 +117,8 @@ span{
   .navigatiefont:active:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    color: #00ABE1;
+    color: #0D176E;
     transition: transform 0.5s ease-in-out;
-  }
-  .btn-primary{
-    background-color: #0D176E;
-    border: 5px solid #0D176E;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 700;
-  }
-  .btn-outline-primary{
-    background-color: transparent;
-    border: 5px solid #00ABE1;
-    color: #00ABE1;
-    cursor: pointer;
-    font-weight: 700;
-}
-  
-  .btn-primary:hover{
-      background-color: #00ABE1;
-      border: 5px solid #00ABE1;
-        transition: 0.5s ease-in-out;
   }
   .text{
     color: #fff;

@@ -16,14 +16,14 @@ const Routing = () => {
   return(
       <Navbar className="color-nav" expand="lg" variant="dark">
         <Container>
-          <LinkContainer exact to={"/home"}>
+          <LinkContainer exact to={"/"}>
             <Navbar.Brand><img src="./assets/LogoJDRwhite.png" alt="LogoJDR" className="logo" fluid/></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
             <LinkContainer exact to="/about">
-                <Nav.Link className="navigatiefont">about me</Nav.Link>
+                <Nav.Link className="navigatiefont">about</Nav.Link>
             </LinkContainer>
             <LinkContainer exact to="/projects">
               <Nav.Link className="navigatiefont">projects</Nav.Link>
@@ -41,10 +41,10 @@ const Routing = () => {
 const Main = () => {
   return <Container className="link">
           <Switch>
-              <Route path="/home" component={Home}/>
-              <Route path="/about" component={about}/>
-              <Route path="/projects" component={projects}/>
-              <Route path="/contact" component={contact}/>
+              <Route exact path="/about" component={about}/>
+              <Route exact path="/projects" component={projects}/>
+              <Route exact path="/contact" component={contact}/>
+              <Route path="/" component={Home}/>
           </Switch>
       </Container>
 }

@@ -8,11 +8,9 @@ const Home = () => {
         <Container className="container">
         <Row className="blok">
             <Col md={6}>
-                <h6 className="mt-2">Hi, my name is <span>Joris De Ridder</span></h6>
-                    <h1>Need a new <span>design</span> for your business?</h1>
-                <h6 className="mt-2">Graphic design / Front End Developer  / Programmer</h6>
-                        <button className=" mt-4 px-5 py-3 btn btn-primary">Watch my projects</button>
-                        <button className=" mt-4 px-5 py-3 mx-4 btn btn-outline-primary">Go to my resume</button>
+                    <h1>I <span>create</span> apps, websites & brands</h1>
+                <h6 className="mt-2">I am a front-end developper with knowledge of programming and graphic design.</h6>
+                        <button className=" mt-4 px-5 py-3 btn btn-primary">See my projects</button>
             </Col>
             <Col sm={6}>
                 {/* <Image src={require('Path1.png')} alt="hoofd"/> */}
