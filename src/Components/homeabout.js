@@ -2,11 +2,11 @@ import React from 'react'
 import 'bootstrap';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
-const Homeabout = () => {
+const HomeProjects = () => {
     return (
         <Container fluid>
                     <div className="bluebackground">
-                    <h2 className="tussentitel mt-5">About me</h2>
+                    <h2 className="tussentitel mt-5">Projects</h2>
                         <Container>
                     <Row>
                     {/* <Col md={6}>
@@ -27,4 +27,4 @@ const Homeabout = () => {
         </Container>
     )
 }
-export default Homeabout;
+export default HomeProjects;
