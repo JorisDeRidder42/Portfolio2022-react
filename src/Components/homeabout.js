@@ -9,18 +9,32 @@ const HomeProjects = () => {
                     <h2 className="tussentitel mt-5">Projects</h2>
                         <Container>
                     <Row>
-                    {/* <Col md={6}>
-                            <Image src="./Path1.png" alt="hoofd"/>
-                        </Col>
+                    <Col md={6}>
+                            <div className="allaround">
+                                <div className="card">
+                                    <div className="counter"><h3>01</h3></div>
+                                    <div className="content">
+                                        <h2>Captain Marvel</h2>
+                                        <p>Captain Marvel is a Legend in the MCU.</p>
+                                        <a href ="#" className="buttonread">Read more</a>
+                                    </div>
+                                    <img src="./assets/captmarvel.png" id="captain" alt="Captain Marvel"></img>
+                                </div>
+                            </div>
+                        </Col> 
                         <Col md={6}>
-                            <h2>Meet the coder</h2>
-                            <p>Joris is a Front-End Developer based in Belgium Antwerp.
-                                he has a serious passion for design and animations.
-
-                                He is also a Dedicated codewars player and a big fan of movies and TV series.
-                                He also plays competitive badminton.</p>
-                            <button className=" mt-4 px-5 py-3 btn btn-outline-primary">Go to my resume</button>
-                        </Col> */} 
+                            <div className="allaround">
+                                <div className="card">
+                                    <div className="counter"><h3>02</h3></div>
+                                    <div className="content">
+                                        <h2>Sarandonga</h2>
+                                        <p>Sarandonga is a dancing company in Belgium. specialised in spanish Flamenco.</p>
+                                        <a href ="#" className="buttonread">Read more</a>
+                                    </div>
+                                    <img src="./assets/sarandonga.png" id="malena" alt="Sarandonga Malena"></img>
+                                </div>
+                            </div>
+                        </Col> 
                         </Row>
                 </Container>
             </div>
