@@ -22,7 +22,7 @@ const Routing = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-            <LinkContainer exact to="/about">
+            <LinkContainer exact to="/about"> 
                 <Nav.Link className="navigatiefont">about</Nav.Link>
             </LinkContainer>
             <LinkContainer exact to="/projects">
