@@ -48,20 +48,40 @@
     width:25%;
     height: 5px;
     background: rgb(0,255,246);
-    background: -moz-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: -webkit-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1);
+    background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(90deg, #00FFF6, #3282E1,#6600CC);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1)
  }
 .color-nav{
     background-color:#ffff;
+    font-weight: 600;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+h1 span{
+    background: rgb(0,255,246);
+    background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(90deg, #00FFF6, #3282E1,#6600CC,#3282E1, #00FFF6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1);
+    -webkit-text-fill-color:transparent;
+    background-size: 200%;
+    -webkit-background-clip:text;    
+    background-clip: text;
+    animation: tekstanimatie 5s linear infinite;
+}
+    @keyframes tekstanimatie {
+        0%{
+           background-position: 0%;
+        }
+        100%{
+            background-position: 200%;
+        }
+    }
 .logo{
     width: 3em;
-}
-span{
-    color: #00ABE1;
 }
 
 .blok{
@@ -125,6 +145,16 @@ span{
   }
   .titel{
     color: #fff;
+  }
+  .btn-primary{
+    background-color: (90deg#0D176E, #6600CC);
+    background: rgb(13,23,110);
+    background: -moz-linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(102,0,204,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(90deg, rgba(13,23,110,1) 0%, rgba(102,0,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d176e",endColorstr="#6600cc",GradientType=1);
+    border: 2px solid none;
+    border-radius: 10px;
   }
   
 
