@@ -9,7 +9,7 @@ const HomeProjects = () => {
                     <h2 className="tussentitel mt-5 mb-5">Projects</h2>
                     <Container>
                     <Row>
-                        <Col md={6} className="">
+                        <Col md={6} className="my-4">
                                 <div className="allaround">
                                     <div className="card">
                                         <div className="counter"><h3>02</h3></div>
@@ -23,7 +23,7 @@ const HomeProjects = () => {
                                 </div>
                             </Col>
                              
-                            <Col md={6}>
+                            <Col md={6} className="my-4">
                                 <div className="allaround">
                                     <div className="card">
                                         <div className="counter"><h3>03</h3></div>
