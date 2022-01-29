@@ -1,4 +1,3 @@
-import { Image } from "react-bootstrap";
 import HomeProjects from "./homeprojects";
 import { Container, Row, Col } from 'react-bootstrap';
 import HomeAbout from "./homeabout";

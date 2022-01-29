@@ -1,6 +1,5 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap';
-import { Container, Row, Col, Image} from 'react-bootstrap';
 
 const HomeProjects = () => {
     return ( 
