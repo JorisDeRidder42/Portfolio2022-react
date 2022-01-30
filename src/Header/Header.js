@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route } from "react-router";
 import { LinkContainer } from "react-router-bootstrap";
 
-import { Home } from "../Components/home";
-import { about } from "../Components/about";
-import { projects } from "../Components/project";
-import { contact } from "../Components/contact";
+import { Home } from "../pages/home";
+import { About } from "../pages/about";
+import { Projects } from "../pages/project";
+import { Contact } from "../pages/contact";
 
 
 const Routing = () => {
@@ -17,7 +17,7 @@ const Routing = () => {
       <Navbar className="color-nav" expand="lg" variant="dark">
         <Container>
           <LinkContainer exact to={"/"}>
-            <Navbar.Brand><img src="./assets/Logo JDR-07.png" alt="LogoJDR" className="logo" fluid/></Navbar.Brand>
+            <Navbar.Brand><img src="./assets/Logo JDR-06.png" alt="LogoJDR" className="logo" fluid/></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -28,7 +28,7 @@ const Routing = () => {
             <LinkContainer exact to="/projects">
               <Nav.Link className="navigatiefont">projects</Nav.Link>
             </LinkContainer>
-            <LinkContainer exact to="/contact">
+            <LinkContainer exact to="/pages/contact">
             <Nav.Link className="navigatiefont">contact</Nav.Link>
             </LinkContainer>
             </Nav>
@@ -41,9 +41,9 @@ const Routing = () => {
 const Main = () => {
   return <Container className="link">
           <Switch>
-              <Route exact path="/about" component={about}/>
-              <Route exact path="/projects" component={projects}/>
-              <Route exact path="/contact" component={contact}/>
+              <Route exact path="/about" component={About}/>
+              <Route exact path="/projects" component={Projects}/>
+              <Route exact path="/contact" component={Contact}/>
               <Route path="/" component={Home}/>
           </Switch>
       </Container>

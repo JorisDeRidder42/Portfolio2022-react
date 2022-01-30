@@ -21,7 +21,7 @@
     height: calc(100vh - 5em);
 }
 .color-nav{
-    background-color:#ffff;
+    background-color:#0D176E;
     font-weight: 600;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -33,14 +33,15 @@
 }
 
 .blok{
-    height: calc(100vh - 130px);
+    height: calc(100vh - 3em);
     align-items: center;
+    justify-content: center;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #0D176E;
+    color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0D176E;
+    color: #fff;
 }
 .navigatiefont{
     font-size: 1.3em;
@@ -111,7 +112,7 @@ h1{
     color: #0D176E;
 }
 
-.blok h6{
+h6{
     font-weight: 400;
     padding-top: 1em; 
     font-size: 1.2em;
@@ -129,15 +130,15 @@ h1{
     background: #0D176E;
     transition: 0.5s;
     border-radius: 10px;
-    padding: 1em 3em;
+    padding: 1em 2em;
     font-weight: 600;
     cursor: pointer;
-    border: 5px solid #0D176E;
+    border: 3px solid #0D176E;
 }
 .btn-primary:hover{
         color: #0D176E;
         background: transparent;
-        border: 5px solid #0D176E
+        border: 3px solid #0D176E
 }
 
 
@@ -145,7 +146,6 @@ h1{
 /* 3 HomePageProjects */
   .bluebackground{
     background-color: #0D176E;
-    height: 70vh;
     overflow-y: hidden;
 }
 .tekstabout{
@@ -175,9 +175,7 @@ h1{
 }
 
 
-.card{
-    margin-top: 3em;
-    height: 20em;
+.card{  
     border-radius: 1em;
     box-shadow: 0 10px 20px rgba(57, 54, 75, 0.19), 0 6px 6px rgba(57, 49, 100, 0.23);
 }
@@ -188,14 +186,15 @@ h1{
     font-weight: bold;
     color: #0D176E;
 }
+
 .card-title::after{
     display: block;
     content: "";
     position: absolute;
-    left: 38%;
+    margin: auto;
     margin-top: 0.5em;
     width: 30%;
-    height: 0.5vh;  
+    height: 0.2em;  
     background: rgb(0,255,246);
     background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);

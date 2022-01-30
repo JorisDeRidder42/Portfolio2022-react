@@ -1,10 +1,10 @@
 
-import { Card } from "react-bootstrap"
-import React from "react"
+import { Card } from "react-bootstrap";
+import React from "react";
 
 const CardItem = (props) => {
     return(
-        <Card>
+        <Card className="my-5">
             <Card.Title className="mt-5">{props.header}</Card.Title>
                     <Card.Body>
                         <Card.Text>
