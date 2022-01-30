@@ -17,7 +17,8 @@
     padding-left: 0;
 }
 .hoogteHomePage{
-    height: calc(100vh - 130px);
+    /* height: calc(100vh - 90px); */
+    height: calc(100vh - 5em);
 }
 .color-nav{
     background-color:#ffff;
@@ -103,7 +104,7 @@ h1 span{
 .blok{
     margin-bottom: 10em;
 }
-.blok h1{
+h1{
     font-weight: 600;
     font-size: 4em;
     font-family: 'Poppins', sans-serif;
@@ -142,39 +143,14 @@ h1 span{
 
 
 /* 3 HomePageProjects */
-
-.tussentitel{
-    text-align: center;
-    padding-left: 1em;
-    font-weight: bold;
-    font-size: 3.5rem;
-    color:#0D176E;
-    position: relative;
-}
-
-.tussentitel::after{
-    display: block;
-    content: "";
-    position: absolute;
-    left: 38%;
-    width: 30%;
-    height: 0.8vh;  
-    background: rgb(0,255,246);
-    background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(90deg, #00FFF6, #3282E1,#6600CC);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1)
- }
- .bluebackground{
+  .bluebackground{
     background-color: #0D176E;
-    height: 80vh;
+    height: 70vh;
     overflow-y: hidden;
 }
 .tekstabout{
     color: #fff;
 }
-
 .line{
 
     height: 1em;
@@ -186,16 +162,24 @@ h1 span{
     background: linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
     background: linear-gradient(90deg, #00FFF6, #3282E1,#6600CC);
 }
+.lijn{
+
+    height: 0.4em;
+    margin: auto;
+    width: 10em;
+    background: rgb(0,255,246);
+    background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
+    background: linear-gradient(90deg, #00FFF6, #3282E1,#6600CC);
+}
+
 
 .card{
     margin-top: 3em;
+    height: 20em;
     border-radius: 1em;
-    height: auto;
     box-shadow: 0 10px 20px rgba(57, 54, 75, 0.19), 0 6px 6px rgba(57, 49, 100, 0.23);
-}
-
-.card-body{
-    margin:2em;    
 }
 
 .card-title{
