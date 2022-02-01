@@ -54,7 +54,7 @@
   .navigatiefont:after {
     content: "";
     position: absolute;
-    width: 80%;
+    width: 100%;
     transform: scale(0);
     height: 5px;
     bottom: 0;
@@ -129,7 +129,7 @@ h6{
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     background: #0D176E;
     transition: 0.5s;
-    border-radius: 10px;
+    border-radius: 1em;
     padding: 1em 2em;
     font-weight: 600;
     cursor: pointer;
@@ -165,7 +165,6 @@ h6{
 .lijn{
 
     height: 0.4em;
-    margin: auto;
     width: 10em;
     background: rgb(0,255,246);
     background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
@@ -182,17 +181,18 @@ h6{
 
 .card-title{
     font-size: 2rem;
+    position: relative;
     text-align: center;
     font-weight: bold;
     color: #0D176E;
 }
-
 .card-title::after{
-    display: block;
     content: "";
     position: absolute;
-    margin: auto;
     margin-top: 0.5em;
+    top:100%;
+    margin-left: 35%;
+    left:0px;
     width: 30%;
     height: 0.2em;  
     background: rgb(0,255,246);
