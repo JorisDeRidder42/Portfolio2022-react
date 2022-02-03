@@ -5,7 +5,7 @@ import { CardItem } from './cardItem';
 
 const tekst1 = {
     header: 'Programming',
-    content: 'Building brands or updating existing brands that reflect your business strategy. Services such as logo design, design for print (posters, flyers, whitepapers, business cards), illustrations and more!'
+    content: 'I recently learned programming, I create good looking products that store data or make use of an API that collect data'
 }
 const tekst2 = {
     header: 'Webdesign',
@@ -19,9 +19,9 @@ const tekst3 = {
 const HomeAbout = () => {
     return (
         <Container fluid>
-                    <div className="bluebackground">
+                    <div className=" pb-5">
                         <Container>
-                                    <h1 className=" mt-3 pt-5 text-center text-white">Hi I'm <span>Joris</span></h1>
+                                    <h2 className="pt-5">Hi I'm <span>Joris</span></h2>
                                     <h6 className='mt-2 text-center text-white'>I craft beautifull websites that are
                                     people friendly and focused on branding.</h6>
                             <Row>
