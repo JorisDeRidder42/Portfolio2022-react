@@ -5,15 +5,15 @@ import { CardItem } from './cardItem';
 
 const tekst1 = {
     header: 'Programming',
-    content: 'I recently learned programming, I create good looking products that store data or make use of an API that collect data'
+    content: 'I create good looking products that are focused on UX and stores data or make use of an API that collects data.'
 }
 const tekst2 = {
     header: 'Webdesign',
-    content: 'Using my experience as a designer I love to design and build websites that look amazing,  All my websites run on bootstrap and are responsive across all devices.'
+    content: 'Using my experience as a designer I love to design and build websites that look amazing. All my websites run on bootstrap and are always fully responsive across all devices.'
 }
 const tekst3 = {
     header: 'Branding',
-    content: 'Building brands or updating existing brands that reflect your business strategy. Services such as logo design, design for print (posters, flyers, whitepapers, business cards), illustrations and more!'
+    content: 'Building brands or updating existing brands that reflect your business strategy. Services such as logo design, design for print (posters, flyers, whitepapers, business cards).'
 }
 
 const HomeAbout = () => {

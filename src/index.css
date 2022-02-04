@@ -1,15 +1,16 @@
 /*Css code Joris De Ridder*/
 
-/* 1 Navbar */
-/* 2 HomePage */
-/* 3 HomePageProjects */
-/* 4 cards */
+/* 1 Navbar/Header */
+/* 2 Home */
+/* 3 HomeAbout */
+/* 4 HomePageProjects */
+/* 5 cards */
+/* 6 HomeContact */
 
-/*NavBar*/
+/*NavBar/Header*/
 .logo{
     width: 3em;
 }
-
 .link{
     width: 100%;
     max-width: 100vw;
@@ -28,13 +29,6 @@
     max-width: 100vw;
     padding-right: 0;
     padding-left: 0;
-    overflow-x: hidden;
-}
-
-.blok{
-    height: calc(100vh - 3em);
-    align-items: center;
-    justify-content: center;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -78,7 +72,12 @@
 
 
 
-/* 2 HomePage */
+/* 2 Home */
+.blok{
+    height: calc(100vh - 3em);
+    align-items: center;
+    justify-content: center;
+}
 h1 span{
     background: rgb(0,255,246);
     background: linear-gradient(90deg, rgba(0,255,246,1) 0%, rgba(50,130,225,1) 25%, rgba(0,255,246,1) 50%, rgba(50,130,225,1) 75%, rgba(0,255,246,1) 100%);
@@ -96,10 +95,6 @@ h1 span{
             background-position: 200%;
         }
     }
-
-.blok{
-    margin-bottom: 10em;
-}
 h1{
     font-weight: 600;
     font-size: 4em;
@@ -118,7 +113,7 @@ h2{
     text-align: center;
 }
 h3 span{
-    color: #0ff;
+    color:#00FFFF;
 }
 
 h6{
@@ -151,6 +146,13 @@ h6{
         color: #00162B;
         background: #00FFFF;
         border: 3px solid #00FFFF
+}
+.tekst{
+    line-height: 1.4em;
+    letter-spacing: 1.2px;
+}
+.tekst span{
+    color: #00FFFF;
 }
 
 
@@ -258,4 +260,39 @@ h6{
 }
 .contactbox a{
     color: #00FFFF;
+}
+.mouse {
+	width: 40px;
+	height: 70px;
+	border: 3px solid rgba(255, 255, 255, 0.26);
+	border-radius: 60px;
+	position: relative;
+}
+	.mouse::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: rgba(255, 255, 255, 0.26);
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
 }
