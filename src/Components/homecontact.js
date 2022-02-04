@@ -47,7 +47,7 @@ const HomeContact = () => {
                                 <li>Joris De Ridder</li>
                                 <li>Belgium, Antwerp</li>
                                 <li>2547 Lint</li>
-                                <li>@: <a href="email">Jorisderidder@outlook.be</a></li>
+                                <li>@: <a href="mailto:Joris.42@hotmail.com">Joris.42@hotmail.com</a></li>
                             </ul>
                         </div>
                     </Col>

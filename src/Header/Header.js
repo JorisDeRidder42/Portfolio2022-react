@@ -28,7 +28,7 @@ const Routing = () => {
             <LinkContainer exact to="/projects">
               <Nav.Link className="navigatiefont">projects</Nav.Link>
             </LinkContainer>
-            <LinkContainer exact to="/pages/contact">
+            <LinkContainer exact to="/contact">
             <Nav.Link className="navigatiefont">contact</Nav.Link>
             </LinkContainer>
             </Nav>
