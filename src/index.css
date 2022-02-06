@@ -160,8 +160,9 @@ h6{
 /* 3 HomePageProjects */
   .bluebackground{
     background-color: #00162B;
-    overflow-y: hidden;
+    overflow: auto;
 }
+
 .tekstabout{
     color: #fff;
 }
@@ -188,10 +189,10 @@ h6{
     height: 0.4em;
     width: 10em;
     background: rgb(0,255,246);
-    background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(90deg, #00FFF6, #3282E1,#6600CC);
+    background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,246,1) 100%);
+    background: linear-gradient(90deg, #00FFF6, #3282E1);
 }
 
 
@@ -261,6 +262,7 @@ h6{
 .contactbox a{
     color: #00FFFF;
 }
+
 .mouse {
 	width: 35px;
 	height: 60px;

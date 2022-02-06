@@ -1,43 +1,56 @@
 import React from "react";
-import { Container,Row, Col, Button } from 'react-bootstrap';
+import { Container,Row, Col } from 'react-bootstrap';
 import { Form } from "react-bootstrap";
+import emailjs from '@emailjs/browser';
 
-const HomeContact = () => {
+
+export const HomeContact = () => {
+
+function sendEmail (e){
+    e.preventDefault();
+
+    emailjs.sendForm('service_jtgl1jw', 'template_dzbnfmj',e.target,'user_3tFHbv7iprH8nesodsvCm')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
+
     return(
         <div>
             <h2 className="my-5 pt-5">Contact <span>me</span></h2>
             <Container>
-                <Form>
+                <form onSubmit={sendEmail}>
                 <Row>
                     <Col md={6}>
                             <Row>
                                 <Col md={6}>
-                                <Form.Group className="mb-3" controlId="formBasicName">
+                                <Form.Group className="mb-3">
                                         <Form.Label>Name</Form.Label>
-                                        <Form.Control type="text" placeholder="Name" />
+                                        <Form.Control type="text" placeholder="Name" name="name" />
                                     </Form.Group>
                                 </Col>
                                 <Col md={6}>
-                                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Group className="mb-3">
                                             <Form.Label>Email address</Form.Label>
-                                            <Form.Control type="email" placeholder="Email" />
-                                        </Form.Group>
-                                    
+                                            <Form.Control type="email" placeholder="Email" name="email" />
+                                        </Form.Group> 
                                 </Col>
                             </Row>
-                            <Form.Group className="mb-3" controlId="formBasicSubject">
+                            
+                            <Form.Group className="mb-3">
                                     <Form.Label>Subject</Form.Label>
-                                    <Form.Control type="text" placeholder="Subject" />
+                                    <Form.Control type="text" placeholder="Subject" name="subject" />
                                 </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                            <Form.Group className="mb-3">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" placeholder="Message" rows={3} />
+                                <Form.Control as="textarea" placeholder="Message" rows={3} name="message" />
                             </Form.Group>
 
-                                <Button variant="primary" type="submit">
-                                    Send message
-                                </Button>
+                                <input type="submit" variant="primary" className="btn btn-primary mt-2 mb-5" value="Send Message"/>
                         </Col>
                     <Col md={6}>
                         <h3 className="text-start text-white">Ready to <span>collaborate?</span></h3>
@@ -52,7 +65,7 @@ const HomeContact = () => {
                         </div>
                     </Col>
                 </Row>
-                </Form>
+                </form>
             </Container>
         </div>
     )

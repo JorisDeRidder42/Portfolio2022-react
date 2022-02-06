@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap';
-import { Container,Row, Col, Image } from 'react-bootstrap';
+import { Container,Row, Col } from 'react-bootstrap';
 import { CardItem } from './cardItem';
 
 const tekst1 = {
