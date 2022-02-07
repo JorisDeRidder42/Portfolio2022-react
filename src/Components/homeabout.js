@@ -18,7 +18,7 @@ const tekst3 = {
 
 const HomeAbout = () => {
     return (
-        <Container fluid>
+        <Container fluid="true">
                     <div className=" pb-5">
                         <Container>
                                     <h2 className="pt-5">Hi I'm <span>Joris</span></h2>

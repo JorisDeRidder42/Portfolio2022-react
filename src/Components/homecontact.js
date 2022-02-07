@@ -9,7 +9,7 @@ export const HomeContact = () => {
 function sendEmail (e){
     e.preventDefault();
 
-    emailjs.sendForm('service_jtgl1jw', 'template_dzbnfmj',e.target,'user_3tFHbv7iprH8nesodsvCm')
+    emailjs.sendForm('service_3u0qshe', 'template_dzbnfmj',e.target,'user_3tFHbv7iprH8nesodsvCm')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -28,25 +28,25 @@ function sendEmail (e){
                             <Row>
                                 <Col md={6}>
                                 <Form.Group className="mb-3">
-                                        <Form.Label>Name</Form.Label>
+                                        <Form.Label>Name*</Form.Label>
                                         <Form.Control type="text" placeholder="Name" name="name" />
                                     </Form.Group>
                                 </Col>
                                 <Col md={6}>
                                     <Form.Group className="mb-3">
-                                            <Form.Label>Email address</Form.Label>
+                                            <Form.Label>Email address*</Form.Label>
                                             <Form.Control type="email" placeholder="Email" name="email" />
                                         </Form.Group> 
                                 </Col>
                             </Row>
                             
                             <Form.Group className="mb-3">
-                                    <Form.Label>Subject</Form.Label>
+                                    <Form.Label>Subject*</Form.Label>
                                     <Form.Control type="text" placeholder="Subject" name="subject" />
                                 </Form.Group>
 
                             <Form.Group className="mb-3">
-                                <Form.Label>Message</Form.Label>
+                                <Form.Label>Message*</Form.Label>
                                 <Form.Control as="textarea" placeholder="Message" rows={3} name="message" />
                             </Form.Group>
 

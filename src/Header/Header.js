@@ -17,7 +17,7 @@ const Routing = () => {
       <Navbar className="color-nav" expand="lg" variant="dark">
         <Container>
           <LinkContainer exact to={"/"}>
-            <Navbar.Brand><img src="./assets/Logo JDR-06.png" alt="LogoJDR" className="logo" fluid/></Navbar.Brand>
+            <Navbar.Brand><img src="./assets/LOGO_JDR.png" alt="LogoJDR" className="logo" fluid/></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

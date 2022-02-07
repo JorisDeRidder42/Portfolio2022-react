@@ -172,7 +172,7 @@ h6{
     border-radius: 0 0 2em 2em;
     border: none;
     background: rgb(0,255,246);
-    background: linear-gradient(90deg, rgba(0,255,246,1) 0%, rgba(50,130,225,1) 25%, rgba(102,0,204,1) 50%, rgba(50,130,225,1) 75%, rgba(0,255,246,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,246,1) 0%, rgba(50,130,225,1) 50%, rgba(0,255,246,1) 100%);
     background-size: 200%;
     animation: lijnanimatie 5s linear infinite;
 }
@@ -209,22 +209,6 @@ h6{
     font-weight:400;
     color: #fff;
 }
-/* .card-title::after{
-    content: "";
-    position: absolute;
-    margin-top: 0.5em;
-    top:100%;
-    margin-left: 35%;
-    left:0px;
-    width: 30%;
-    height: 0.2em;  
-    background: rgb(0,255,246);
-    background: -moz-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(90deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(90deg, #00FFF6, #3282E1,#6600CC);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1)
-} */
 .card-text{
     padding-top: 1.5em;
     padding: 1.5em;
@@ -243,12 +227,7 @@ h6{
 }
 
 .form-label{
-    color: #fff;
-}
-.form-control{
-    background-color: #122E4D;
-    border: 1px solid #122E4D;
-    font-family: 'Open Sans', sans-serif;
+    color: #00FFFF;
 }
 .contactbox{
     padding: 2em;
@@ -270,7 +249,7 @@ h6{
 	border-radius: 60px;
 	position: relative;
 }
-	.mouse::before {
+.mouse::before {
 		content: '';
 		width: 12px;
 		height: 12px;

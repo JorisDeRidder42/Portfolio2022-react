@@ -19,7 +19,7 @@ const Home = () => {
                             <Col sm={6}>
                                 {/* <Image src={require('Path1.png')} alt="hoofd"/> */}
                             </Col>
-                            <div class="mouse"></div>
+                            <div className="mouse"></div>
                         </Row>
                     </Container>
                 <HomeAbout/>

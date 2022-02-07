@@ -11,7 +11,7 @@ const HomeProjects = () => {
             <h2 className="my-5 py-5">Check out my <span>projects</span></h2>
             <Row>
                 <Col md={4}>
-                    <Card className="mb-3">
+                    <Card className="mb-5">
                         <Card.Img className="image" variant="top" alt="pc" src="./assets/gianni.png"/>
                             <Card.Body>
                                 <Card.Title className="title">Flores y fiesta</Card.Title>
@@ -30,7 +30,7 @@ const HomeProjects = () => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                <Card className="mb-3">
+                <Card className="mb-5">
                         <Card.Img className="image" variant="top" alt="pc" src="./assets/gianni.png"/>
                             <Card.Body>
                                 <Card.Title className="title">Gianni Claes</Card.Title>
@@ -58,7 +58,7 @@ const HomeProjects = () => {
                                 </Card.Text>
                             <Card.Subtitle className="mb-2 text-muted">Tools: Visual studio: C# & SQL</Card.Subtitle>
                             <Card.Subtitle className="mb-4 text-muted">Year: 2021</Card.Subtitle>
-                                <div class="d-flex justify-content-center">
+                                <div className="d-flex justify-content-center">
                                 <LinkContainer to={'/projects'}>
                                     <button className="my-4 px-5 py-3 btn btn-primary" a href="#">See my projects</button>
                                 </LinkContainer>
