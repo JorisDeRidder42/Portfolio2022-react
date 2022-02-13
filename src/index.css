@@ -17,10 +17,6 @@
     padding-right: 0;
     padding-left: 0;
 }
-.hoogteHomePage{
-    /* height: calc(100vh - 90px); */
-    height: calc(100vh - 4em);
-}
 .color-nav{
     background-color:#00162B;
     font-weight: 600;
@@ -53,10 +49,7 @@
     bottom: 0;
     left: 0;
     background: rgb(0,255,246);
-    background: -moz-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: -webkit-linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    background: linear-gradient(93deg, rgba(0,255,246,1) 22%, rgba(102,0,204,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00fff6",endColorstr="#6600cc",GradientType=1);
+    background: linear-gradient(90deg, rgba(0,255,246,1) 0%, rgba(50,130,225,1) 100%);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
   }
@@ -73,9 +66,9 @@
 
 
 /* 2 Home */
-.blok{
-    height: 100vh;
+.midden{
     align-items: center;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -108,7 +101,7 @@ h2 span{
 }
 h2{
     font-weight: 600;
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     text-align: center;
@@ -161,7 +154,6 @@ h6{
 /* 3 HomePageProjects */
   .bluebackground{
     background-color: #00162B;
-    overflow: auto;
 }
 
 .tekstabout{
@@ -278,4 +270,8 @@ h6{
 		opacity: 0;
 		top: 50px;
 	}
+}
+
+.icons a{
+    font-size: 2em;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Container,Row, Col } from 'react-bootstrap';
 import { Form } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
+import { FaFacebook, FaInstagram, FaLinkedin,FaGithub  } from 'react-icons/fa';
 
 
 export const HomeContact = () => {
@@ -54,13 +55,14 @@ function sendEmail (e){
                         </Col>
                     <Col md={6}>
                         <h3 className="text-start text-white">Ready to <span>collaborate?</span></h3>
-                        <p className="text-white">Find me on socialmedia, connect with me through this form or mail me.</p>
-                        <div className="mt-5 contactbox">
+                        <p className="text-white">Find me on social-media, connect with me through this form or mail me.</p>
+                        <div className="mt-2 contactbox">
                             <ul>
                                 <li>Joris De Ridder</li>
                                 <li>Belgium, Antwerp</li>
                                 <li>2547 Lint</li>
                                 <li>@: <a href="mailto:Joris.42@hotmail.com">Joris.42@hotmail.com</a></li>
+                                <li className="icons"><a href="" target="_blank"><FaFacebook/></a> <a href="" target="_blank"><FaInstagram/></a> <a href="" target="_blank"><FaLinkedin/></a> <a href="" target="_blank"><FaGithub/></a></li>
                             </ul>
                         </div>
                     </Col>
