@@ -5,7 +5,7 @@ import { CardItem } from './cardItem';
 
 const tekst1 = {
     header: 'Programming',
-    content: 'I create good looking products that are focused on UX and stores data or make use of an API that collects data.'
+    content: 'I create good looking products that are focused on UX and stores data or make use of an API that collects data that is used for my applications.'
 }
 const tekst2 = {
     header: 'Webdesign',

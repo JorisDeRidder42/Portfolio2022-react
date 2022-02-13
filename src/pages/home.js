@@ -1,13 +1,13 @@
 import HomeProjects from "../Components/homeprojects";
-import { Container, Row, Col } from 'react-bootstrap';
 import HomeAbout from "../Components/homeabout";
-import { LinkContainer } from "react-router-bootstrap";
 import HomeContact from "../Components/homecontact";
+import { Container, Row, Col } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
 
 const Home = () => {
     return(
             <div className="bluebackground">
-                    <Container className="hoogteHomePage">
+                <Container className="hoogteHomePage">
                         <Row className="blok mt-5">
                             <Col md={6}>
                                 <h1 className="text-white">Need a new <span>design</span> for your business?</h1>
@@ -17,7 +17,7 @@ const Home = () => {
                                 </LinkContainer>
                             </Col>
                             <Col sm={6}>
-                                {/* <Image src={require('Path1.png')} alt="hoofd"/> */}
+                                {/* <image src="../assets/profiel.jpg" className="img-fluid" alt="hoofd"/> */}
                             </Col>
                             <div className="mouse"></div>
                         </Row>

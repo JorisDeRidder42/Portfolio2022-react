@@ -16,7 +16,7 @@ const HomeProjects = () => {
                             <Card.Body>
                                 <Card.Title className="title">Flores y fiesta</Card.Title>
                                 <Card.Text>
-                                    Created a website for a flamenco dance companys based in Belgium.
+                                    Created a website for a flamenco dance company based in Belgium.
                                 </Card.Text>
                             <Card.Subtitle className="mb-2 text-muted">Tools: Bootstrap 5, HTML5, CSS3 & Javascript</Card.Subtitle>
                             <Card.Subtitle className="mb-4 text-muted">Year: 2017</Card.Subtitle>
@@ -35,7 +35,7 @@ const HomeProjects = () => {
                             <Card.Body>
                                 <Card.Title className="title">Gianni Claes</Card.Title>
                                 <Card.Text>
-                                    Personal logo design for a friend his portfolio.
+                                    Personal logo design for a friend focussed on high class and letter design.
                                 </Card.Text>
                             <Card.Subtitle className="mb-2 text-muted">Tools: Illustrator & photoshop</Card.Subtitle>
                             <Card.Subtitle className="mb-4 text-muted">Year: 2020</Card.Subtitle>
@@ -54,7 +54,7 @@ const HomeProjects = () => {
                             <Card.Body>
                                 <Card.Title className="title">Tournament</Card.Title>
                                 <Card.Text>
-                                Created a program where you can choose a game and register yourself for that chosentournament
+                                Created a program where you can choose a game and register yourself for that tournament
                                 </Card.Text>
                             <Card.Subtitle className="mb-2 text-muted">Tools: Visual studio: C# & SQL</Card.Subtitle>
                             <Card.Subtitle className="mb-4 text-muted">Year: 2021</Card.Subtitle>

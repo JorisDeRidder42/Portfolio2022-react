@@ -47,15 +47,15 @@ const Main = () => {
               <Route path="/" component={Home}/>
           </Switch>
       </Container>
-}
+  }
 
-const Alles = () => {
-  return(
-    <div>
-      <Routing/>
-      <Main/>
-    </div>
-  )
-}
+  const Alles = () => {
+    return(
+      <div>
+        <Routing/>
+        <Main/>
+      </div>
+    )
+  }
 
 export {Alles};

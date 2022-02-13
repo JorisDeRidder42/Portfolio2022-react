@@ -19,7 +19,7 @@
 }
 .hoogteHomePage{
     /* height: calc(100vh - 90px); */
-    height: calc(100vh - 5em);
+    height: calc(100vh - 4em);
 }
 .color-nav{
     background-color:#00162B;
@@ -74,10 +74,11 @@
 
 /* 2 Home */
 .blok{
-    height: calc(100vh - 3em);
+    height: 100vh;
     align-items: center;
     justify-content: center;
 }
+
 h1 span{
     background: rgb(0,255,246);
     background: linear-gradient(90deg, rgba(0,255,246,1) 0%, rgba(50,130,225,1) 25%, rgba(0,255,246,1) 50%, rgba(50,130,225,1) 75%, rgba(0,255,246,1) 100%);
@@ -243,12 +244,13 @@ h6{
 }
 
 .mouse {
-	width: 35px;
+	width: 32px;
 	height: 60px;
 	border: 2px solid hsla(0, 0%, 100%, 0.5);
-	border-radius: 60px;
+	border-radius: 50px;
 	position: relative;
 }
+
 .mouse::before {
 		content: '';
 		width: 12px;
@@ -261,19 +263,19 @@ h6{
 		border-radius: 50%;
 		opacity: 1;
 		animation: wheel 2s infinite;
-		-webkit-animation: wheel 2s infinite;
+		-webkit-animation: wheel 3s infinite;
 }
 
 @keyframes wheel {
 	to {
 		opacity: 0;
-		top: 60px;
+		top: 50px;
 	}
 }
 
 @-webkit-keyframes wheel {
 	to {
 		opacity: 0;
-		top: 60px;
+		top: 50px;
 	}
 }
