@@ -3,6 +3,7 @@ import 'bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Card } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap';
+import { FaHtml5, FaCss3Alt, FaReact, FaGithub} from 'react-icons/fa';
 
 
 const AboutSkills = () => {
@@ -10,14 +11,20 @@ const AboutSkills = () => {
         <Container className='mt-5'>
             <Row>
                 <Col md={6}>
-                    <h2 className='text-white'>Skills</h2>
+                    <h2 className='text-white mb-3'>Skills</h2>
                     <Container>
                         <Row>
                             <Col md={4}>
                                 <p className='text-white'>HTML/CSS</p>
+                                <div className='iconsskills'>
+                                    <FaHtml5/><FaCss3Alt/>
+                                </div>
                             </Col>
                             <Col md={4}>
                                 <p className='text-white'>React</p>
+                                <div className='iconsskills'>
+                                    <FaReact/>
+                                </div>
                             </Col>
                             <Col md={4}>
                                 <p className='text-white'>C#/.NET</p>
@@ -40,6 +47,10 @@ const AboutSkills = () => {
                             </Col>
                             <Col md={4}>
                                 <p className='text-white'>Github</p>
+                                <div className='iconsskills'>
+                                    <FaGithub/>
+                                </div>
+                                
                             </Col>
                             <Col md={4}>
                                 <p className='text-white'>Ionic</p>
