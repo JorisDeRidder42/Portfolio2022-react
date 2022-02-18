@@ -3,7 +3,7 @@ import 'bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Card } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap';
-import { FaHtml5, FaCss3Alt, FaReact, FaGithub} from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaVuejs} from 'react-icons/fa';
 
 
 const AboutSkills = () => {
@@ -27,21 +27,24 @@ const AboutSkills = () => {
                                 </div>
                             </Col>
                             <Col md={4}>
-                                <p className='text-white'>C#/.NET</p>
+                            <p className='text-white'>Vue</p>
+                            <div className='iconsskills'>
+                                <FaVuejs/>
+                            </div>
                             </Col>
                         </Row>
-                        <Row>
+                        <Row className='mt-2'>
                             <Col md={4}>
-                                <p className='text-white'>Javascript</p>
+                                <p className='text-white'>Javascript/Typescript</p>
                             </Col>
                             <Col md={4}>
-                                <p className='text-white'>Typescript</p>
+                                <p className='text-white'>.NET</p>
                             </Col>
                             <Col md={4}>
                                 <p className='text-white'>C#</p>
                             </Col>
                         </Row>
-                        <Row>
+                        <Row className='mt-2'>
                             <Col md={4}>
                                 <p className='text-white'>SQL</p>
                             </Col>
