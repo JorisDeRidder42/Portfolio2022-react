@@ -3,25 +3,34 @@ import HomeAbout from "../Components/homeabout";
 import HomeContact from "../Components/homecontact";
 import { Container, Row, Col } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
+import { FaArrowDown  } from 'react-icons/fa';
+import { CgArrowLongDown  } from 'react-icons/cg';
 
 const Home = () => {
     return(
             <div className="bluebackground">
                 <Container>
                         <Row className="midden">
-                            <Col md={6} className="mt-5">
+                            <Col md={8}>
                                 <div>
                                     <h1 className="text-white">Need a new <span>design</span> for your business?</h1>
-                                    <h6 className="mt-2 text-white tekst">Hello there, my name is <span>Joris De Ridder</span>, I am a student <b>programmer</b> with knowledge of <b>UX/UI design</b> and <b>webdevelopment</b></h6>
+                                    <h4 className="mt-4 text-white tekst">Front-end/Back-end/Programmer</h4>
                                     <LinkContainer to={'/projects'}>
-                                        <button className="mt-4 px-5 py-3 btn btn-primary" a href="#">View my projects</button>
+                                        <button className="mt-4 px-5 py-3 btn btn-primary" a href="#">Explore</button>
                                     </LinkContainer>
+                                    <div className="iconArrow">
+                                        <CgArrowLongDown/>
+                                    </div>
                                 </div>
                             </Col>
-                            <Col sm={6}>
-                                {/* <image src="../assets/profiel.jpg" className="img-fluid" alt="hoofd"/> */}
+                            <Col sm={4}>
+                                <div className="contact mt-5">
+                                    <h5>Based in Belgium <br/> Get in touch for availlabillity</h5>
+                                    <a href="https://www.google.be" rel="noreferrer" target="_blank">LinkedIn</a>
+                                    <a href="https://www.google.be" rel="noreferrer" target="_blank">Dribbble</a>
+                                    <a href="https://www.google.be" rel="noreferrer" target="_blank">Instagram</a>
+                                </div>
                             </Col>
-                            <div className="mouse"></div>
                         </Row>
                     </Container>
                 <HomeAbout/>
