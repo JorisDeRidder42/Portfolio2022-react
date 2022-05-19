@@ -9,7 +9,7 @@ const Home = () => {
     const pointerX = event.pageX;
     const pointerY = event.pageY;
 
-    console.log(pointerX, pointerY);
+    console.log("pointers", pointerX, pointerY);
   };
 
   return (
