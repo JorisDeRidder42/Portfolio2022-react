@@ -1,43 +1,35 @@
-import React from 'react'
-import 'bootstrap';
-import { Container,Row, Col } from 'react-bootstrap';
-import { CardItem } from './cardItem';
-
-const tekst1 = {
-    header: 'Programming',
-    content: 'I create good looking products that are focused on UX and stores data or make use of an API that collects data that is used for my applications.'
-}
-const tekst2 = {
-    header: 'Webdesign',
-    content: 'Using my experience as a designer I love to design and build websites that look amazing. All my websites run on bootstrap and are always fully responsive across all devices.'
-}
-const tekst3 = {
-    header: 'Branding',
-    content: 'Building brands or updating existing brands that reflect your business strategy. Services such as logo design, design for print (posters, flyers, whitepapers, business cards).'
-}
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
 
 const HomeAbout = () => {
-    return (
-        <Container fluid="true">
-                    <div className=" pb-5">
-                        <Container>
-                                    <h2 className="pt-5">Hi I'm <span>Joris</span></h2>
-                                    <h6 className='mt-2 text-center text-white'>I craft beautifull websites that are
-                                    people friendly and focused on branding.</h6>
-                            <Row>
-                                <Col md={4}>
-                                    <CardItem {...tekst1}/>
-                                </Col>
-                                <Col md={4}>
-                                    <CardItem {...tekst2}/>
-                                </Col>
-                                <Col md={4}>
-                                    <CardItem {...tekst3}/>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </div>
+  return (
+    <div>
+      <Container>
+        <h2 className="pt-5 text-start">About me</h2>
+        <div className="line"></div>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <Image
+                src="assets/profiel.jpg"
+                className="prof mt-5"
+                alt="profilePicture"
+                responsive
+              />
+            </Col>
+            <Col md={6}>
+              <h2 className="text-start">Hi I am Joris</h2>
+              <p className="text-start mt-4">
+                Hi I'm Joris, student programming based in Belgium Antwerp. I
+                have a serious passion for design and web I also play badminton
+                and watch alot of movies & series
+              </p>
+            </Col>
+          </Row>
         </Container>
-    )
-}
+      </Container>
+    </div>
+  );
+};
 export default HomeAbout;
