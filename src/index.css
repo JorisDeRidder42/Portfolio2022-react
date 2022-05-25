@@ -3,12 +3,17 @@
   /* colors */
   --primary-color: #ffffff !important;
   --secondary-color: #00162b !important;
+  --accent-color: #04f5fd !important;
 
   /* size */
-  --title: 5em;
+  --watermark: 10em;
+  --title: 4em;
+  --icons: 2.2em;
   --header: 2em;
+  --number: 1.7em;
   --nav: 1.5em;
   --body: 1.2em;
+  --small: 1em;
 
   /* weigth */
   --bold: 700;
@@ -17,8 +22,7 @@
 
   /* font-fam */
   --poppins: "Poppins", sans-serif;
-  --workSans: "Work-sans", sans-serif;
-
+  --Roboto: "Roboto Mono", monospace;
   --gradient: linear-gradient(
     14deg,
     rgba(4, 245, 253, 1) 0%,
@@ -133,45 +137,45 @@ h3 span {
   color: #00ffff;
 }
 h4 {
-  font-weight: var(--semi-bold);
+  font-weight: var(--regular);
   font-size: var(--body);
-  font-family: var(--workSans);
+  font-family: var(--poppins);
   color: var(--primary-color);
   text-align: left;
 }
-.clip {
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-  z-index: -5;
-  position: absolute;
-  right: 0%;
-  top: -3.5%;
-  width: 32%;
-  height: 100vh;
-  background: var(--gradient-old);
-  background: var(--gradient);
-}
-.prof {
-  width: 80%;
+h5 {
+  font-weight: var(--semi-bold);
+  font-size: var(--body);
+  font-family: var(--Roboto);
+  color: var(--accent-color);
+  text-align: left;
 }
 
-.btn-primary {
-  background: var(--gradient-old);
-  background: var(--gradient);
+.watermark {
+  color: var(--primary-color);
+  /* font-size: var(--watermark); */
+  opacity: 5%;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.btn-outline-primary {
   transition: 0.5s;
   border-radius: 0.5em;
   padding: 1em 2em;
-  color: var(--secondary-color);
+  color: var(--accent-color);
   font-weight: var(--semi-bold);
   font-size: var(--body);
-  font-family: var(--poppins);
-  text-transform: uppercase;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
   cursor: pointer;
-  border: none;
+  border: solid 2px var(--accent-color);
 }
-
-.block {
-  margin-left: -6em;
-  margin-top: -5em;
+.numberHeader {
+  color: var(--accent-color);
+  font-weight: var(--semi-bold);
+  font-size: var(--small);
+  font-family: var(--Roboto);
 }
 .contact a {
   color: var(--primary-color);
@@ -180,15 +184,14 @@ h4 {
 .contact {
   color: var(--primary-color);
 }
-.btn-primary:hover {
+.tekst {
+  line-height: 1.7em;
+  font-size: var(--body);
   color: var(--primary-color);
 }
-.tekst {
-  line-height: 1.4em;
-  letter-spacing: 1.2px;
-}
-.tekst span {
-  color: #00ffff;
+
+.shuttle {
+  position: absolute;
 }
 
 /* 3 HomePageProjects */
@@ -202,7 +205,7 @@ h4 {
   color: var(--primary-color);
 }
 .line {
-  width: 20em;
+  width: 10em;
   height: 0.5em;
   background: var(--gradient-old);
   background: var(--gradient);
@@ -226,11 +229,12 @@ h4 {
 }
 
 .icons a {
-  font-size: 2em;
+  font-size: var(--icons);
+  margin-right: 0.3em;
+  color: var(--primary-color);
+  transition: all ease-in-out 0.3s;
 }
-
-.iconsskills {
-  color: #fff;
-  font-size: 1.5em;
-  margin-top: -0.6em;
+.icons a:hover {
+  color: var(--accent-color);
+  transform: scale(1.2);
 }
