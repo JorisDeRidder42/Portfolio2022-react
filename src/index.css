@@ -4,6 +4,7 @@
   --primary-color: #eeeeee !important;
   --secondary-color: #00162b !important;
   --accent-color: #04f5fd !important;
+  --background-color: #001e3b !important;
 
   /* size */
   --watermark: 10em;
@@ -11,7 +12,7 @@
   --icons: 2.2em;
   --header: 2em;
   --number: 1.7em;
-  --nav: 1.5em;
+  --nav: 1.2em;
   --body: 1.1em;
   --small: 1em;
 
@@ -50,44 +51,6 @@
   max-width: 100vw;
   padding-right: 0;
   padding-left: 0;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--primary-color);
-  position: relative;
-  z-index: 10;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
-}
-.navigatiefont {
-  font-size: var(--nav);
-  margin-left: 1.5em;
-  transition: all 2s;
-  display: inline-block;
-  position: relative;
-  color: var(--primary-color);
-  z-index: 10;
-}
-.navigatiefont:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scale(0);
-  height: 5px;
-  bottom: 0;
-  left: 0;
-  background: var(--gradient);
-  background: var(--gradient-old);
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
-}
-.navigatiefont:hover:after,
-.navigatiefont:focus:after,
-.navigatiefont:active:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-  color: #0d176e;
-  transition: transform 0.5s ease-in-out;
 }
 
 /* 2 Home */
@@ -156,6 +119,7 @@ h4 {
   color: var(--primary-color);
   text-align: left;
 }
+
 h5 {
   font-weight: var(--semi-bold);
   font-size: var(--body);
@@ -190,10 +154,10 @@ h5 {
   color: var(--secondary-color);
   transition: 0.3s ease-in-out;
 }
-.numberHeader {
+.numberNavigation {
   color: var(--accent-color);
   font-weight: var(--semi-bold);
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: var(--Roboto);
 }
 .numberTitle {
@@ -216,6 +180,11 @@ h5 {
   color: var(--primary-color);
   font-family: var(--poppins);
 }
+.card {
+  background-color: var(--background-color);
+  opacity: 75%;
+  color: var(--primary-color);
+}
 .quote {
   color: var(--primary-color);
 }
@@ -224,6 +193,13 @@ h5 {
 }
 .shuttle {
   position: absolute;
+}
+.featured {
+  font-weight: var(--regular);
+  font-size: var(--body);
+  font-family: var(--Roboto);
+  color: var(--accent-color);
+  text-align: left;
 }
 
 /* 3 HomePageProjects */

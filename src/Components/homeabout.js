@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 
 const HomeAbout = () => {
   return (
-    <div>
-      <Container>
+    <div className="about">
+      <Container className="mt-5">
         <Row>
           <Col md={6}>
             <h1 className="watermark">About</h1>

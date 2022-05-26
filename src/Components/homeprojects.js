@@ -6,19 +6,32 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const HomeProjects = () => {
   return (
-    <Container>
-      <h1 className="watermark">Projects</h1>
-      <h2 className="pt-5 text-start">My projects</h2>
-      <div className="line"></div>
+    <Container className="mt-5">
+      <Row>
+        <Col md={6}>
+          <h1 className="watermark">Projects</h1>
+          <h2 className="text-start">
+            <span className="numberTitle">02.</span>My projects
+          </h2>
+        </Col>
+        <Col md={6}>
+          <h3 className="quote">
+            My work is the bridge to digital experiences.
+          </h3>
+        </Col>
+      </Row>
       <Container>
         <Row>
-          <Col md={6}>
-            <Card style={{ width: "18rem" }}>
+          <Col md={4}>
+            <Card className="mt-5 card">
               <Card.Body>
-                <Card.Title>Tournament app</Card.Title>
+                <h4 className="featured">Featured project</h4>
+                <Card.Title>
+                  <h3>Tournament app</h3>
+                </Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Application developed for school where you can choose a game
+                  and write yourself in for that game against other players.
                 </Card.Text>
               </Card.Body>
             </Card>
