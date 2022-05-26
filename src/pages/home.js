@@ -5,19 +5,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Home = () => {
-  const moveMouse = (event) => {
-    const pointerX = event.pageX;
-    const pointerY = event.pageY;
-    // console.log("pointer", pointerX, pointerY);
-  };
-
   return (
-    <div className="bluebackground" onMouseMove={moveMouse}>
+    <div className="bluebackground">
       <Container>
         <Row className="midden">
           <Col md={8}>
             <div>
-              <h5>Hello there, my name is Joris</h5>
+              <h5 className="mt-2">Hello there, my name is Joris</h5>
               <h1>
                 Let's <span>build</span> something special together!
               </h1>

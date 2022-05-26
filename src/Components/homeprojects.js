@@ -12,15 +12,18 @@ const HomeProjects = () => {
       <div className="line"></div>
       <Container>
         <Row>
-          {/* <Col md={6}>
-            <h2>Tournament app</h2>
-            <p>
-              Application developed for school where you can choose a game and
-              write yourself in for that game against other players.
-            </p>
-            <button className="mt-4 px-5 py-3 btn btn-primary">Explore</button>
+          <Col md={6}>
+            <Card style={{ width: "18rem" }}>
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={6}></Col> */}
+          <Col md={6}></Col>
         </Row>
       </Container>
     </Container>

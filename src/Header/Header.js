@@ -25,19 +25,19 @@ const Routing = (props) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <LinkContainer exact to="/about">
-              <span className="numberHeader">
-                01.<Nav.Link className="navigatiefont">about</Nav.Link>
-              </span>
+              <Nav.Link className="navigatiefont">
+                <span className="numberHeader">01.</span>about
+              </Nav.Link>
             </LinkContainer>
             <LinkContainer exact to="/projects">
-              <span className="numberHeader">
-                02.<Nav.Link className="navigatiefont">projects</Nav.Link>
-              </span>
+              <Nav.Link className="navigatiefont">
+                <span className="numberHeader">02.</span>projects
+              </Nav.Link>
             </LinkContainer>
             <LinkContainer exact to="/contact">
-              <span className="numberHeader">
-                03.<Nav.Link className="navigatiefont">contact</Nav.Link>
-              </span>
+              <Nav.Link className="navigatiefont">
+                <span className="numberHeader">03.</span>contact
+              </Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
