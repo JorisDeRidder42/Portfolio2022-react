@@ -5,19 +5,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Home = () => {
-  const moveMouse = (event) => {
-    const pointerX = event.pageX;
-    const pointerY = event.pageY;
-
-    console.log("pointer", pointerX, pointerY);
-  };
-
   return (
-    <div className="bluebackground" onMouseMove={moveMouse}>
+    <div className="bluebackground">
       <Container>
         <Row className="midden">
           <Col md={8}>
             <div>
+              <h5 className="mt-2">Hello there, my name is Joris</h5>
               <h1>
                 Let's <span>build</span> something special together!
               </h1>
@@ -26,15 +20,17 @@ const Home = () => {
                 on branding
               </h4>
               <LinkContainer to={"/projects"}>
-                <button className="mt-4 px-5 py-3 btn btn-primary" href="#">
+                <button
+                  className="mt-4 px-5 py-3 btn btn-outline-primary"
+                  href="#"
+                >
                   Explore
                 </button>
               </LinkContainer>
             </div>
           </Col>
           <Col sm={4}>
-            <div className="clip"></div>
-            <img src="assets/3d-computer.png" className="block" alt="blocks" />
+            {/* <img src="assets/3dgraphic.png" alt="blocks" /> */}
           </Col>
         </Row>
       </Container>
