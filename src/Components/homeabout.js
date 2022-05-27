@@ -15,15 +15,15 @@ const HomeAbout = () => {
       <Container className="mt-5">
         <Row>
           <Col md={6}>
-            <h1 className="watermark">About</h1>
+            <h1 className="watermark">Over</h1>
             <h2 className="text-start">
-              <span className="numberTitle">01.</span>About me
+              <span className="numberTitle">01.</span>Over mij
             </h2>
           </Col>
           <Col md={6}>
-            <h3 className="quote">Simplicity is the soul of efficiency.</h3>
+            <h3 className="quote">Less is more.</h3>
             <p>
-              <em className="quoteName">Austin Freeman</em>
+              <em className="quoteName"> Ludwig Mies van der Rohe</em>
             </p>
           </Col>
         </Row>
@@ -34,68 +34,62 @@ const HomeAbout = () => {
                 src="assets/profielfoto.jpg"
                 className="prof m-5 w-50"
                 alt="profilePicture"
-                responsive
               />
             </Col>
             <Col md={6}>
               <p className="text-start mt-5 tekst">
-                Hi I'm Joris De Ridder, <strong>student programming</strong>{" "}
-                based in Belgium Antwerp.
-                <br />I have a serious passion for design and web. <br />
+                Hallo, ik ben Joris De Ridder,
+                <strong>student programmeren</strong> te Thomas More.
                 <br />
-                When I am not coding, I am probably playing badminton or
-                watching a movie or series.
+                Ik heb een serieuze passie voor ontwerp en web
+                <br />
+                <br />
+                Als ik niet aan het coderen ben, speel ik waarschijnlijk
+                badminton of kijk ik naar een film of serie.
               </p>
-              <Row>
-                <Col md={4}>
-                  <ul>
-                    <li>Javascript (ES6+)</li>
-                    <li>React</li>
-                    <li>Vue</li>
-                  </ul>
-                </Col>
-                <Col md={4}>
-                  <ul>
-                    <li>Typescript</li>
-                    <li>Ionic</li>
-                    <li>Wordpress</li>
-                  </ul>
-                </Col>
-                <Col md={4}>
-                  <ul>
-                    <li>C#</li>
-                    <li>.NET</li>
-                  </ul>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <Link
-                    className="mt-4 px-5 py-3 btn btn-outline-primary"
-                    to="/public/assets/Cv_JorisDeRidder2021.pdf"
-                    target="_blank"
-                    download
-                  >
-                    Resume
-                  </Link>
-                </Col>
-                <Col md={8}>
-                  <div className="icons mt-4">
-                    <a href="www.google.be" target="_blank">
-                      <FaLinkedin />
-                    </a>
-                    <a href="www.google.be" target="_blank">
-                      <FaInstagram />
-                    </a>
-                    <a href="www.google.be" target="_blank">
-                      <FaDribbbleSquare />
-                    </a>
-                    <a href="www.google.be" target="_blank">
-                      <FaGithubSquare />
-                    </a>
-                  </div>
-                </Col>
-              </Row>
+
+              <ul className="skills-list">
+                <li>Javascript (ES6+)</li>
+                <li>React</li>
+                <li>Vue</li>
+              </ul>
+
+              <ul className="skills-list">
+                <li>Typescript</li>
+                <li>Ionic</li>
+                <li>Wordpress</li>
+              </ul>
+
+              <ul className="skills-list">
+                <li>C#</li>
+                <li>.NET</li>
+              </ul>
+              <Col md={6}>
+                <Link
+                  className="mt-4 px-5 py-3 btn btn-outline-primary"
+                  to="/public/assets/Cv_JorisDeRidder2021.pdf"
+                  target="_blank"
+                  download
+                >
+                  CV
+                </Link>
+              </Col>
+              <Col md={6}>
+                <div className="icons mt-4">
+                  <a href="www.google.be" target="_blank">
+                    <FaLinkedin />
+                  </a>
+                  <a href="www.google.be" target="_blank">
+                    <FaInstagram />
+                  </a>
+                  <a href="www.google.be" target="_blank">
+                    <FaDribbbleSquare />
+                  </a>
+                  <a href="www.google.be" target="_blank">
+                    <FaGithubSquare />
+                  </a>
+                </div>
+              </Col>
             </Col>
           </Row>
         </Container>

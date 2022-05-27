@@ -1,39 +1,53 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
-import { LinkContainer } from "react-router-bootstrap";
 import "./navigation.css";
-import * as Scroll from "react-scroll";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+import { MdLightMode } from "react-icons/md";
 
 const Navigation = () => {
   return (
-    <Navbar className="color-nav" expand="lg" variant="dark">
+    <Navbar className="color-nav fixed-top" expand="lg" variant="dark">
       <Container>
-        <LinkContainer exact to={"/"}>
+        <Link to="home" spy={true} smooth={true} offset={-80} duration={500}>
           <Navbar.Brand>
             <img src="./assets/LOGO_JDR.png" alt="LogoJDR" className="logo" />
           </Navbar.Brand>
-        </LinkContainer>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Link
+              className="navigatiefont"
               to="about"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-120}
               duration={500}
             >
-              <span className="numberNavigation">01.</span>about
+              <span className="numberNavigation">01.</span>over
             </Link>
 
-            <Nav.Link className="navigatiefont">
-              <span className="numberNavigation">02.</span>projects
-            </Nav.Link>
-            <Nav.Link className="navigatiefont">
+            <Link
+              className="navigatiefont"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <span className="numberNavigation">02.</span>projecten
+            </Link>
+            <Link
+              className="navigatiefont"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               <span className="numberNavigation">03.</span>contact
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

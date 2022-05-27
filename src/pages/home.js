@@ -6,25 +6,25 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const Home = () => {
   return (
-    <div className="bluebackground">
-      <Container>
+    <div className="bluebackground home">
+      <Container className="mt-5">
         <Row className="midden">
           <Col md={8}>
             <div>
-              <h5 className="mt-2">Hello there, my name is Joris</h5>
+              <h5 className="mt-">Hallo, mijn naam is Joris</h5>
               <h1>
-                Let's <span>build</span> something special together!
+                Een website die <span>uw organisatie</span> vooruit helpt!
               </h1>
-              <h4 className="mt-4">
-                I craft beautifull websites that are people friendly and focused
-                on branding
-              </h4>
+              <p className="mt-4">
+                Ik maak mooie websites die gebruiksvriendelijk zijn en gericht
+                op groeien
+              </p>
               <LinkContainer to={"/projects"}>
                 <button
                   className="mt-4 px-5 py-3 btn btn-outline-primary"
                   href="#"
                 >
-                  Explore
+                  Ontdek
                 </button>
               </LinkContainer>
             </div>

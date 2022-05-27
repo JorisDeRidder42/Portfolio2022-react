@@ -2,7 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaDribbbleSquare,
+  FaGithubSquare,
+} from "react-icons/fa";
 
 export const HomeContact = () => {
   function sendEmail(e) {
@@ -27,24 +32,36 @@ export const HomeContact = () => {
   }
 
   return (
-    <div>
-      <h2 className="my-5 pt-5">
-        Contact <span>me</span>
-      </h2>
-      <Container>
-        <form onSubmit={sendEmail}>
+    //     <form onSubmit={sendEmail}>
+
+    <div className="contact">
+      <Container className="mt-5">
+        <Row>
+          <Col md={6}>
+            <h1 className="watermark">Contact</h1>
+            <h2 className="text-start">
+              <span className="numberTitle">03.</span>Contact
+            </h2>
+          </Col>
+          <Col md={6}></Col>
+        </Row>
+        <Container className="mt-5">
           <Row>
             <Col md={6}>
+              <p>
+                Find me on social-media, connect with me through this form or
+                mail me.
+              </p>
               <Row>
                 <Col md={6}>
                   <Form.Group className="mb-3">
-                    <Form.Label>Name*</Form.Label>
+                    <Form.Label>Naam*</Form.Label>
                     <Form.Control type="text" placeholder="Name" name="name" />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
                   <Form.Group className="mb-3">
-                    <Form.Label>Email address*</Form.Label>
+                    <Form.Label>Email addres*</Form.Label>
                     <Form.Control
                       type="email"
                       placeholder="Email"
@@ -55,7 +72,7 @@ export const HomeContact = () => {
               </Row>
 
               <Form.Group className="mb-3">
-                <Form.Label>Subject*</Form.Label>
+                <Form.Label>Onderwerp*</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Subject"
@@ -64,7 +81,7 @@ export const HomeContact = () => {
               </Form.Group>
 
               <Form.Group className="mb-3">
-                <Form.Label>Message*</Form.Label>
+                <Form.Label>Bericht*</Form.Label>
                 <Form.Control
                   as="textarea"
                   placeholder="Message"
@@ -76,25 +93,43 @@ export const HomeContact = () => {
               <input
                 type="submit"
                 variant="primary"
-                className="btn btn-primary mt-2 mb-5"
+                className="btn btn-outline-primary mt-2 mb-5"
                 value="Send Message"
               />
             </Col>
-            {/* <Col md={6}>
-                        <h3 className="text-start text-white">Ready to <span>collaborate?</span></h3>
-                        <p className="text-white">Find me on social-media, connect with me through this form or mail me.</p>
-                        <div className="mt-2 contactbox">
-                            <ul>
-                                <li>Joris De Ridder</li>
-                                <li>Belgium, Antwerp</li>
-                                <li>2547 Lint</li>
-                                <li>@: <a href="mailto:Joris.42@hotmail.com">Joris.42@hotmail.com</a></li>
-                                <li className="icons"><a href="" target="_blank"><FaFacebook/></a> <a href="" target="_blank"><FaInstagram/></a> <a href="" target="_blank"><FaLinkedin/></a> <a href="" target="_blank"><FaGithub/></a></li>
-                            </ul>
-                        </div>
-                    </Col> */}
+            <Col md={6}>
+              <div className="mt-2 contactbox">
+                <ul className="contact-info">
+                  <li>Joris De Ridder</li>
+                  <li>Belgium, Antwerp</li>
+                  <li>2547 Lint</li>
+                  <li>0492/64.13.23</li>
+
+                  <li>
+                    @
+                    <a href="mailto:Joris.42@hotmail.com">
+                      Joris.42@hotmail.com
+                    </a>
+                  </li>
+                  <li className="icons">
+                    <a href="" target="_blank">
+                      <FaLinkedin />
+                    </a>
+                    <a href="" target="_blank">
+                      <FaInstagram />
+                    </a>
+                    <a href="" target="_blank">
+                      <FaDribbbleSquare />
+                    </a>
+                    <a href="" target="_blank">
+                      <FaGithubSquare />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Col>
           </Row>
-        </form>
+        </Container>
       </Container>
     </div>
   );
