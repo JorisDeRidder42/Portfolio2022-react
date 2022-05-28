@@ -26,7 +26,7 @@ const HomeProjects = () => {
             </h3>
           </Col>
         </Row>
-        <Container className="my-3">
+        <Container className="my-5">
           <Row>
             <Col md={6}>
               <Card className="mt-5 card">
@@ -60,15 +60,8 @@ const HomeProjects = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="my-3">
+        <Container className="my-5">
           <Row>
-            <Col md={6}>
-              <Image
-                src="assets/projects/pokedraw (2).jpg"
-                alt="pokedraw"
-                fluid={true}
-              />
-            </Col>
             <Col md={6}>
               <Card className="mt-5 card">
                 <Card.Body>
@@ -76,7 +69,7 @@ const HomeProjects = () => {
                     <h4 className="featured">Featured project</h4>
                   </Card.Subtitle>
                   <Card.Title>
-                    <h3>Pokedraw</h3>
+                    <h3>Pokédraw app</h3>
                   </Card.Title>
                   <Card.Text>
                     Een applicatie die een pokemon-database heeft a.d.h.v. een
@@ -89,6 +82,13 @@ const HomeProjects = () => {
                   </ul>
                 </Card.Body>
               </Card>
+            </Col>
+            <Col md={6}>
+              <Image
+                src="assets/projects/tournament.PNG"
+                alt="tournament"
+                fluid={true}
+              />
             </Col>
           </Row>
         </Container>
