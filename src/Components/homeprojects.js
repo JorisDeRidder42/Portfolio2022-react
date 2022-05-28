@@ -53,7 +53,7 @@ const HomeProjects = () => {
             </Col>
             <Col md={6}>
               <Image
-                src="assets/tournament.PNG"
+                src="assets/projects/tournament.PNG"
                 alt="tournament"
                 fluid={true}
               />
@@ -63,7 +63,11 @@ const HomeProjects = () => {
         <Container className="my-3">
           <Row>
             <Col md={6}>
-              <Image src="assets/gianni.PNG" alt="tournament" fluid={true} />
+              <Image
+                src="assets/projects/pokedraw (2).jpg"
+                alt="pokedraw"
+                fluid={true}
+              />
             </Col>
             <Col md={6}>
               <Card className="mt-5 card">
