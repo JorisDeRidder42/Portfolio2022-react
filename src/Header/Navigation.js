@@ -33,7 +33,7 @@ const Navigation = () => {
               to="projects"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-120}
               duration={500}
             >
               <span className="numberNavigation">02.</span>projecten
@@ -43,7 +43,7 @@ const Navigation = () => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-80}
               duration={500}
             >
               <span className="numberNavigation">03.</span>contact

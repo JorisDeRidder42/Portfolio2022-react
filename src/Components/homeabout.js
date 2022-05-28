@@ -15,7 +15,6 @@ const HomeAbout = () => {
       <Container className="mt-5">
         <Row>
           <Col md={6}>
-            <h1 className="watermark">Over</h1>
             <h2 className="text-start">
               <span className="numberTitle">01.</span>Over mij
             </h2>
@@ -34,6 +33,7 @@ const HomeAbout = () => {
                 src="assets/profielfoto.jpg"
                 className="prof m-5 w-50"
                 alt="profilePicture"
+                fluid={true}
               />
             </Col>
             <Col md={6}>

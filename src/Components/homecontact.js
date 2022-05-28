@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import {
@@ -38,7 +38,6 @@ export const HomeContact = () => {
       <Container className="mt-5">
         <Row>
           <Col md={6}>
-            <h1 className="watermark">Contact</h1>
             <h2 className="text-start">
               <span className="numberTitle">03.</span>Contact
             </h2>
@@ -56,7 +55,7 @@ export const HomeContact = () => {
                 <Col md={6}>
                   <Form.Group className="mb-3">
                     <Form.Label>Naam*</Form.Label>
-                    <Form.Control type="text" placeholder="Name" name="name" />
+                    <Form.Control type="text" placeholder="Naam" name="Naam" />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
@@ -75,8 +74,8 @@ export const HomeContact = () => {
                 <Form.Label>Onderwerp*</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Subject"
-                  name="subject"
+                  placeholder="Onderwerp"
+                  name="Onderwerp"
                 />
               </Form.Group>
 
@@ -84,9 +83,9 @@ export const HomeContact = () => {
                 <Form.Label>Bericht*</Form.Label>
                 <Form.Control
                   as="textarea"
-                  placeholder="Message"
+                  placeholder="Bericht"
                   rows={3}
-                  name="message"
+                  name="Bericht"
                 />
               </Form.Group>
 
@@ -94,39 +93,43 @@ export const HomeContact = () => {
                 type="submit"
                 variant="primary"
                 className="btn btn-outline-primary mt-2 mb-5"
-                value="Send Message"
+                value="Stuur bericht"
               />
             </Col>
             <Col md={6}>
-              <div className="mt-2 contactbox">
-                <ul className="contact-info">
-                  <li>Joris De Ridder</li>
-                  <li>Belgium, Antwerp</li>
-                  <li>2547 Lint</li>
-                  <li>0492/64.13.23</li>
+              <Card className="mb-5 p-3 card">
+                <Card.Body>
+                  <Card.Text>
+                    <ul className="contact-info">
+                      <li>Joris De Ridder</li>
+                      <li>België, Antwerpen</li>
+                      <li>2547 Lint</li>
+                      <li>0492/64.13.23</li>
 
-                  <li>
-                    @
-                    <a href="mailto:Joris.42@hotmail.com">
-                      Joris.42@hotmail.com
-                    </a>
-                  </li>
-                  <li className="icons">
-                    <a href="" target="_blank">
-                      <FaLinkedin />
-                    </a>
-                    <a href="" target="_blank">
-                      <FaInstagram />
-                    </a>
-                    <a href="" target="_blank">
-                      <FaDribbbleSquare />
-                    </a>
-                    <a href="" target="_blank">
-                      <FaGithubSquare />
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                      <li>
+                        @
+                        <a href="mailto:Joris.42@hotmail.com">
+                          Joris.42@hotmail.com
+                        </a>
+                      </li>
+                      <li className="icons">
+                        <a href="" target="_blank">
+                          <FaLinkedin />
+                        </a>
+                        <a href="" target="_blank">
+                          <FaInstagram />
+                        </a>
+                        <a href="" target="_blank">
+                          <FaDribbbleSquare />
+                        </a>
+                        <a href="" target="_blank">
+                          <FaGithubSquare />
+                        </a>
+                      </li>
+                    </ul>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>

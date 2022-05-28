@@ -1,6 +1,13 @@
 import React from "react";
 import "bootstrap";
-import { Container, Row, Col, CardGroup, ListGroup } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  CardGroup,
+  ListGroup,
+  Image,
+} from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
 const HomeProjects = () => {
@@ -9,7 +16,6 @@ const HomeProjects = () => {
       <Container className="mt-5">
         <Row>
           <Col md={6}>
-            <h1 className="watermark">Projecten</h1>
             <h2 className="text-start">
               <span className="numberTitle">02.</span>Mijn Projecten
             </h2>
@@ -20,7 +26,7 @@ const HomeProjects = () => {
             </h3>
           </Col>
         </Row>
-        <Container className="mt-5">
+        <Container className="my-3">
           <Row>
             <Col md={6}>
               <Card className="mt-5 card">
@@ -46,14 +52,18 @@ const HomeProjects = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <img src="assets/gianni.PNG" alt="tournament" />
+              <Image
+                src="assets/tournament.PNG"
+                alt="tournament"
+                fluid={true}
+              />
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container className="my-3">
           <Row>
             <Col md={6}>
-              <img src="assets/gianni.PNG" alt="tournament" />
+              <Image src="assets/gianni.PNG" alt="tournament" fluid={true} />
             </Col>
             <Col md={6}>
               <Card className="mt-5 card">
@@ -75,16 +85,6 @@ const HomeProjects = () => {
                   </ul>
                 </Card.Body>
               </Card>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row>
-            <Col md={6}></Col>
-            <Col md={6}>
-              <button className="mt-4 px-5 py-3 btn btn-outline-primary">
-                Toon meer projecten
-              </button>
             </Col>
           </Row>
         </Container>

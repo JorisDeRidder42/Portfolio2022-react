@@ -7,7 +7,7 @@
   );
   --gradient-old: rgb(4, 245, 253);
 
-  --navigation: 0.9em;
+  --navigation: 1em;
 }
 
 .navigatiefont {
@@ -47,5 +47,5 @@
 
 .color-nav {
   font-weight: var(--semi-bold);
-  background: var(--secondary-color);
+  background: transparent;
 }

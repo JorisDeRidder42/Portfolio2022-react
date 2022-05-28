@@ -5,15 +5,14 @@
   --secondary-color: #00162b !important;
   --accent-color: #04f5fd !important;
   --background-color: #001e3b !important;
+  --focus-color: #5185e9 !important;
 
   /* size */
-  --watermark: 10em;
   --title: 3em;
   --icons: 2.2em;
-  --header: 2em;
-  --number: 1.7em;
-  --subtitle: 1.5em;
-  --nav: 1.2em;
+  --header: 1.8em;
+  --number: 1.6em;
+  --subtitle: 1.4em;
   --body: 1em;
   --small: 0.8em;
   --list: 0.7;
@@ -33,6 +32,26 @@
     rgba(81, 133, 233, 1) 100%
   );
   --gradient-old: rgb(4, 245, 253);
+}
+
+.loading {
+  -webkit-animation: loader 1s infinite ease-in-out;
+  animation: loader 1s infinite ease-in-out;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+  height: 6em;
+  width: 6em;
+}
+@keyframes loader {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.5s;
+    transform: scale(1);
+  }
 }
 
 .logo {
@@ -142,19 +161,12 @@ h5 {
   color: var(--accent-color);
 }
 
-.watermark {
-  color: var(--primary-color);
-  /* font-size: var(--watermark); */
-  opacity: 5%;
-  text-transform: uppercase;
-  position: absolute;
-}
-
 .btn-outline-primary {
   transition: 0.3s ease-in-out;
   border-radius: 0.5em;
   padding: 1em 2em;
   color: var(--accent-color);
+  background-color: transparent;
   font-weight: var(--semi-bold);
   font-size: var(--body);
   font-family: var(--Roboto);
@@ -168,6 +180,13 @@ h5 {
   border: solid 2px var(--accent-color);
   color: var(--secondary-color);
   transition: 0.3s ease-in-out;
+  padding-right: 25px;
+}
+.btn-outline-primary:focus {
+  border: dashed 2px var(--accent-color);
+  color: var(--accent -color);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 0 4px var(--focus-color);
 }
 .numberNavigation {
   color: var(--accent-color);
@@ -200,11 +219,11 @@ h5 {
   opacity: 75%;
   color: var(--primary-color);
 }
+
 .quote {
-  color: var(--primary-color);
-}
-.quoteName {
-  color: var(--primary-color);
+  color: var(--accent-color);
+  font-family: var(--poppins);
+  font-size: var(--header);
 }
 .shuttle {
   position: absolute;
@@ -216,12 +235,18 @@ h5 {
   color: var(--accent-color);
   text-align: left;
 }
-
-/* 3 HomePageProjects */
 .bluebackground {
-  background: var(--secondary-color);
+  min-height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 22, 43, 0.95) 0%,
+      rgba(0, 22, 43, 0.95) 100%
+    ),
+    url(../src/pattern.jpg);
   z-index: 0;
-  position: relative;
+  position: absolute;
+  top: 0%;
+  width: 100%;
 }
 
 .tekstabout {
@@ -234,7 +259,6 @@ h5 {
 .contactbox {
   padding: 2em;
   background-color: var(--background-color);
-  width: 20rem;
 }
 .contact-info {
   list-style: none;
@@ -263,6 +287,7 @@ h5 {
   list-style: none;
   font-family: var(--Roboto);
   font-weight: var(--regular);
+  color: var(--accent-color);
 }
 
 .project-tech-list li {
