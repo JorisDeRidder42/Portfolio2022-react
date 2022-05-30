@@ -98,7 +98,6 @@
 .skills-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 10px 0px 0px;
   overflow: hidden;
   list-style: none;
   color: var(--primary-color);

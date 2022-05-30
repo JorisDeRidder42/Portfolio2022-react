@@ -68,7 +68,6 @@ const HomeAbout = () => {
                 <Link
                   className="mt-4 px-5 py-3 btn btn-outline-primary"
                   to="/public/assets/Cv_JorisDeRidder2021.pdf"
-                  target="_blank"
                   download
                 >
                   CV

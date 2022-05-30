@@ -1,13 +1,6 @@
 import React from "react";
 import "bootstrap";
-import {
-  Container,
-  Row,
-  Col,
-  CardGroup,
-  ListGroup,
-  Image,
-} from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
 const HomeProjects = () => {
