@@ -1,9 +1,10 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Image, Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import "./navigation.css";
 import { Link } from "react-scroll";
 import { MdLightMode } from "react-icons/md";
+import logo from "../assets/LOGO_JDR.png";
 
 const Navigation = () => {
   return (
@@ -11,7 +12,7 @@ const Navigation = () => {
       <Container>
         <Link to="home" spy={true} smooth={true} offset={-80} duration={500}>
           <Navbar.Brand>
-            <img src="./assets/LOGO_JDR.png" alt="LogoJDR" className="logo" />
+            <Image src={logo} alt="LogoJDR" className="logo" />
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

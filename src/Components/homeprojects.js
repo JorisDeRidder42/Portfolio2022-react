@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
+import Tournament from "../assets/images/tournament.PNG";
+import Pokedraw from "../assets/images/pokedraw(3).jpg";
 
 const HomeProjects = () => {
   return (
@@ -45,11 +47,7 @@ const HomeProjects = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Image
-                src="assets/projects/tournament.PNG"
-                alt="tournament"
-                fluid={true}
-              />
+              <Image src={Tournament} alt="tournament" fluid={true} />
             </Col>
           </Row>
         </Container>
@@ -77,11 +75,10 @@ const HomeProjects = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Image
-                src="assets/projects/tournament.PNG"
-                alt="tournament"
-                fluid={true}
-              />
+              <div className="pokeFlex">
+                <Image src={Pokedraw} alt="tournament" fluid={true} />
+                <Image src={Pokedraw} alt="tournament" fluid={true} />
+              </div>
             </Col>
           </Row>
         </Container>

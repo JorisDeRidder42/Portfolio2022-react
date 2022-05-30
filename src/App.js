@@ -4,17 +4,23 @@ import Navigation from "./Header/Navigation";
 import { Home } from "./pages/home";
 
 function App() {
-  // const [loading, setLoading] = useState(false);
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 5000);
-  // }, []);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
   return (
     <div className="App">
-      <Navigation />
-      <Home />
+      {loading ? (
+        <ClipLoader size={100} color={"#04f5fd"} loading={loading} />
+      ) : (
+        <div>
+          <Navigation />
+          <Home />
+        </div>
+      )}
     </div>
   );
 }

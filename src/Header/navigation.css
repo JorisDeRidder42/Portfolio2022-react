@@ -8,13 +8,13 @@
   --gradient-old: rgb(4, 245, 253);
 
   --navigation: 1em;
+  --secondary-color: #00162b !important;
 }
 
 .navigatiefont {
   position: relative;
-  margin-top: 1em;
   font-size: var(--navigation);
-  margin-left: 1.5em;
+  margin-left: 1.8em;
   transition: all 0.3s ease-in-out;
   color: var(--primary-color);
   text-decoration: none;
@@ -47,5 +47,5 @@
 
 .color-nav {
   font-weight: var(--semi-bold);
-  background: transparent;
+  background: var(--secondary-color);
 }

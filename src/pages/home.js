@@ -11,7 +11,7 @@ const Home = () => {
         <Row className="midden">
           <Col md={8}>
             <div>
-              <h5 className="mt-">Hallo, mijn naam is Joris</h5>
+              <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
               <h1>
                 Ik <span>bouw</span> spullen voor het web
               </h1>

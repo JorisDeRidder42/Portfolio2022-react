@@ -8,6 +8,7 @@ import {
   FaGithubSquare,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import profilePicture from "../assets/images/profielfoto.jpg";
 
 const HomeAbout = () => {
   return (
@@ -30,8 +31,8 @@ const HomeAbout = () => {
           <Row>
             <Col md={6}>
               <Image
-                src="assets/profielfoto.jpg"
-                className="prof m-5 w-50"
+                src={profilePicture}
+                className="profilePicture m-3 w-50"
                 alt="profilePicture"
                 fluid={true}
               />
@@ -52,43 +53,40 @@ const HomeAbout = () => {
                 <li>Javascript (ES6+)</li>
                 <li>React</li>
                 <li>Vue</li>
-              </ul>
-
-              <ul className="skills-list">
                 <li>Typescript</li>
                 <li>Ionic</li>
                 <li>Wordpress</li>
-              </ul>
-
-              <ul className="skills-list">
                 <li>C#</li>
                 <li>.NET</li>
               </ul>
-              <Col md={6}>
-                <Link
-                  className="mt-4 px-5 py-3 btn btn-outline-primary"
-                  to="/public/assets/Cv_JorisDeRidder2021.pdf"
-                  download
-                >
-                  CV
-                </Link>
-              </Col>
-              <Col md={6}>
-                <div className="icons mt-4">
-                  <a href="www.google.be" target="_blank">
-                    <FaLinkedin />
-                  </a>
-                  <a href="www.google.be" target="_blank">
-                    <FaInstagram />
-                  </a>
-                  <a href="www.google.be" target="_blank">
-                    <FaDribbbleSquare />
-                  </a>
-                  <a href="www.google.be" target="_blank">
-                    <FaGithubSquare />
-                  </a>
-                </div>
-              </Col>
+              <Row>
+                <Col md={6}>
+                  <Link
+                    className="mt-4 px-5' py-3 btn btn-outline-primary"
+                    to="../images/"
+                    target="_blank"
+                    download
+                  >
+                    CV
+                  </Link>
+                </Col>
+                <Col md={6}>
+                  <div className="icons mt-4">
+                    <a href="www.google.be" target="_blank">
+                      <FaLinkedin />
+                    </a>
+                    <a href="www.google.be" target="_blank">
+                      <FaInstagram />
+                    </a>
+                    <a href="www.google.be" target="_blank">
+                      <FaDribbbleSquare />
+                    </a>
+                    <a href="www.google.be" target="_blank">
+                      <FaGithubSquare />
+                    </a>
+                  </div>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
