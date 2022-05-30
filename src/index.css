@@ -63,12 +63,6 @@ dark {
   opacity: 0.5;
 }
 
-.pokeFlex {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-}
-
 .logo:hover {
   transform: perspective(120deg);
   transition: 0.5s ease-in-out;

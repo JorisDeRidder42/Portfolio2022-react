@@ -3,7 +3,7 @@ import "bootstrap";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Tournament from "../assets/images/tournament.PNG";
-import Pokedraw from "../assets/images/pokedraw(3).jpg";
+import Pokedraw from "../assets/video/pokedraw.gif";
 
 const HomeProjects = () => {
   return (
@@ -75,10 +75,7 @@ const HomeProjects = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <div className="pokeFlex">
-                <Image src={Pokedraw} alt="tournament" fluid={true} />
-                <Image src={Pokedraw} alt="tournament" fluid={true} />
-              </div>
+              <Image src={Pokedraw} height={500} />
             </Col>
           </Row>
         </Container>
