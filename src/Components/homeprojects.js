@@ -7,7 +7,7 @@ import Pokedraw from "../assets/video/pokedraw.gif";
 
 const HomeProjects = () => {
   return (
-    <div className="projects">
+    <div className="projects mt-5 pt-5">
       <Container className="mt-5">
         <Row>
           <Col md={6}>
@@ -75,7 +75,7 @@ const HomeProjects = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Image src={Pokedraw} height={500} />
+              <Image src={Pokedraw} className="video" />
             </Col>
           </Row>
         </Container>

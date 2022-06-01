@@ -9,11 +9,16 @@
 
   --navigation: 1em;
   --secondary-color: #00162b !important;
+  --shadow: rgba(2, 12, 27, 0.7) !important;
+
+  --poppins: "Poppins", sans-serif;
+  --Roboto: "Roboto Mono", monospace;
 }
 
 .navigatiefont {
   position: relative;
   font-size: var(--navigation);
+  font-family: var(--Roboto);
   margin-left: 1.8em;
   transition: all 0.3s ease-in-out;
   color: var(--primary-color);
@@ -47,5 +52,6 @@
 
 .color-nav {
   font-weight: var(--semi-bold);
-  background: var(--secondary-color);
+  background: rgba(0, 22, 43, 0.5);
+  box-shadow: 0 10px 30px -10px var(--shadow);
 }

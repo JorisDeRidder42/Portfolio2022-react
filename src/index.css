@@ -75,16 +75,11 @@ dark {
   padding-right: 0;
   padding-left: 0;
 }
-.container-fluid {
-  max-width: 100vw;
-  padding-right: 0;
-  padding-left: 0;
-}
 
 /* 2 Home */
-.midden {
+.center {
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -107,6 +102,10 @@ dark {
 .skills-list li {
   color: var(--primary-color);
   list-style: none;
+}
+
+.video {
+  width: 40%;
 }
 
 h1 span {
@@ -190,6 +189,7 @@ h5 {
 .btn-outline-primary:focus {
   border: dashed 2px var(--accent-color);
   color: var(--secondary-color);
+  background-color: var(--accent-color);
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 0 4px var(--focus-color);
 }
@@ -227,7 +227,7 @@ h5 {
 }
 
 .quote {
-  color: var(--accent-color);
+  color: var(--primary-color);
   font-family: var(--poppins);
   font-size: var(--header);
 }

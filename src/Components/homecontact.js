@@ -34,7 +34,7 @@ export const HomeContact = () => {
   return (
     //     <form onSubmit={sendEmail}>
 
-    <div className="contact">
+    <div className="contact mt-5 pt-5">
       <Container className="mt-5">
         <Row>
           <Col md={6}>
@@ -42,64 +42,67 @@ export const HomeContact = () => {
               <span className="numberTitle">03.</span>Contact
             </h2>
           </Col>
-          <Col md={6}></Col>
         </Row>
         <Container className="mt-5">
-          <Row>
-            <Col md={6}>
-              <p>
-                Find me on social-media, connect with me through this form or
-                mail me.
-              </p>
-              <Row>
-                <Col md={6}>
-                  <Form.Group className="mb-3">
-                    <Form.Label>Naam*</Form.Label>
-                    <Form.Control type="text" placeholder="Naam" name="Naam" />
-                  </Form.Group>
-                </Col>
-                <Col md={6}>
-                  <Form.Group className="mb-3">
-                    <Form.Label>Email addres*</Form.Label>
-                    <Form.Control
-                      type="email"
-                      placeholder="Email"
-                      name="email"
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
+          <Form>
+            <Row>
+              <Col md={6}>
+                <p>
+                  Find me on social-media, connect with me through this form or
+                  mail me.
+                </p>
+                <Row>
+                  <Col md={6}>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Naam*</Form.Label>
+                      <Form.Control
+                        type="text"
+                        placeholder="Naam"
+                        name="Naam"
+                      />
+                    </Form.Group>
+                  </Col>
+                  <Col md={6}>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Email addres*</Form.Label>
+                      <Form.Control
+                        type="email"
+                        placeholder="Email"
+                        name="email"
+                      />
+                    </Form.Group>
+                  </Col>
+                </Row>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Onderwerp*</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Onderwerp"
-                  name="Onderwerp"
+                <Form.Group className="mb-3">
+                  <Form.Label>Onderwerp*</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Onderwerp"
+                    name="Onderwerp"
+                  />
+                </Form.Group>
+
+                <Form.Group className="mb-3">
+                  <Form.Label>Bericht*</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    placeholder="Bericht"
+                    rows={3}
+                    name="Bericht"
+                  />
+                </Form.Group>
+                <input
+                  type="submit"
+                  variant="primary"
+                  onClick={sendEmail}
+                  className="btn btn-outline-primary mt-2 mb-5"
+                  value="Stuur bericht"
                 />
-              </Form.Group>
-
-              <Form.Group className="mb-3">
-                <Form.Label>Bericht*</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  placeholder="Bericht"
-                  rows={3}
-                  name="Bericht"
-                />
-              </Form.Group>
-
-              <input
-                type="submit"
-                variant="primary"
-                className="btn btn-outline-primary mt-2 mb-5"
-                value="Stuur bericht"
-              />
-            </Col>
-            <Col md={6}>
-              <Card className="mb-5 p-3 card">
-                <Card.Body>
-                  <Card.Text>
+              </Col>
+              <Col md={6}>
+                <Card className="mb-5 p-3 card">
+                  <Card.Body>
                     <ul className="contact-info">
                       <li>Joris De Ridder</li>
                       <li>België, Antwerpen</li>
@@ -127,11 +130,11 @@ export const HomeContact = () => {
                         </a>
                       </li>
                     </ul>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Form>
         </Container>
       </Container>
     </div>

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home bluebackground">
       <Container className="mt-5">
-        <Row className="midden">
+        <Row className="center">
           <Col md={8}>
             <div>
               <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
