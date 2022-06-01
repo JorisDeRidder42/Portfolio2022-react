@@ -316,3 +316,6 @@ h5 {
   font-family: var(--poppins);
   font-weight: var(--regular);
 }
+.form-control:focus {
+  background-color: var(--focus-color);
+}

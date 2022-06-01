@@ -8,6 +8,7 @@ import {
   FaDribbbleSquare,
   FaGithubSquare,
 } from "react-icons/fa";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const HomeContact = () => {
   function sendEmail(e) {
@@ -31,9 +32,11 @@ export const HomeContact = () => {
     e.target.reset();
   }
 
-  return (
-    //     <form onSubmit={sendEmail}>
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
+  return (
     <div className="contact mt-5 pt-5">
       <Container className="mt-5">
         <Row>
@@ -44,7 +47,7 @@ export const HomeContact = () => {
           </Col>
         </Row>
         <Container className="mt-5">
-          <Form>
+          <Form onSubmit={sendEmail}>
             <Row>
               <Col md={6}>
                 <p>
@@ -73,7 +76,6 @@ export const HomeContact = () => {
                     </Form.Group>
                   </Col>
                 </Row>
-
                 <Form.Group className="mb-3">
                   <Form.Label>Onderwerp*</Form.Label>
                   <Form.Control
@@ -82,7 +84,6 @@ export const HomeContact = () => {
                     name="Onderwerp"
                   />
                 </Form.Group>
-
                 <Form.Group className="mb-3">
                   <Form.Label>Bericht*</Form.Label>
                   <Form.Control
@@ -92,10 +93,15 @@ export const HomeContact = () => {
                     name="Bericht"
                   />
                 </Form.Group>
+                <ReCAPTCHA
+                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  //change key before set online on hosting
+                  onChange={onChange}
+                  theme="dark"
+                />
                 <input
                   type="submit"
                   variant="primary"
-                  onClick={sendEmail}
                   className="btn btn-outline-primary mt-2 mb-5"
                   value="Stuur bericht"
                 />
