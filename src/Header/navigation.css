@@ -62,4 +62,5 @@
 .color-nav {
   font-weight: var(--semi-bold);
   box-shadow: 0 10px 30px -10px var(--shadow) !important;
+  background-color: rgba(0, 22, 43, 0.5);
 }
