@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <Navbar className="fixed-top" expand="lg">
+      <Navbar className="fixed-top" expand="lg" variant="dark">
         <Container>
           <Link to="home" spy={true} smooth={true} offset={-80} duration={500}>
             <Navbar.Brand>
