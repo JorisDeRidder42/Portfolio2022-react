@@ -61,27 +61,37 @@ const HomeAbout = () => {
               </ul>
               <Row>
                 <Col md={6}>
-                  <Link
+                  <a
+                    href="../Cv_JorisDeRidder2022.pdf"
                     className="mt-4 px-5' py-3 btn btn-outline-primary"
-                    to="../images/"
                     target="_blank"
                     download
+                    rel="noopener noreferrer"
                   >
                     CV
-                  </Link>
+                  </a>
                 </Col>
                 <Col md={6}>
                   <div className="icons mt-4">
-                    <a href="www.google.be" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/joris-de-ridder-800363193/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaLinkedin />
                     </a>
-                    <a href="www.google.be" target="_blank">
+                    <a
+                      href="https://www.instagram.com/joris.dr/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaInstagram />
                     </a>
-                    <a href="www.google.be" target="_blank">
-                      <FaDribbbleSquare />
-                    </a>
-                    <a href="www.google.be" target="_blank">
+                    <a
+                      href="https://github.com/JorisDeRidder42"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaGithubSquare />
                     </a>
                   </div>

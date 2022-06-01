@@ -93,12 +93,12 @@ export const HomeContact = () => {
                     name="Bericht"
                   />
                 </Form.Group>
-                <ReCAPTCHA
+                {/* <ReCAPTCHA
                   sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                   //change key before set online on hosting
                   onChange={onChange}
                   theme="dark"
-                />
+                /> */}
                 <input
                   type="submit"
                   variant="primary"
@@ -122,16 +122,25 @@ export const HomeContact = () => {
                         </a>
                       </li>
                       <li className="icons">
-                        <a href="" target="_blank">
+                        <a
+                          href="https://www.linkedin.com/in/joris-de-ridder-800363193/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <FaLinkedin />
                         </a>
-                        <a href="" target="_blank">
+                        <a
+                          href="https://www.instagram.com/joris.dr/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <FaInstagram />
                         </a>
-                        <a href="" target="_blank">
-                          <FaDribbbleSquare />
-                        </a>
-                        <a href="" target="_blank">
+                        <a
+                          href="https://github.com/JorisDeRidder42"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <FaGithubSquare />
                         </a>
                       </li>
