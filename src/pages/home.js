@@ -1,3 +1,4 @@
+import React from "react";
 import HomeProjects from "../Components/homeprojects";
 import HomeAbout from "../Components/homeabout";
 import HomeContact from "../Components/homecontact";
@@ -5,6 +6,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Link from "react-scroll/modules/components/Link";
 
 const Home = () => {
+  // const { theme } = useContext(ThemeContext);
+
   return (
     <div className="home bluebackground">
       <Container className="mt-5">

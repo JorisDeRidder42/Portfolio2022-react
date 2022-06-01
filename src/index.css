@@ -1,5 +1,5 @@
 /*Css code Joris De Ridder*/
-white {
+/* light {
   --primary-color: #eeeeee !important;
   --secondary-color: #00162b !important;
   --card-color: #f5f5f5 !important;
@@ -12,16 +12,14 @@ dark {
   --card-color: #001e3b !important;
   --accent-color: #5185e9 !important;
   --focus-color: #04f5fd !important;
-}
+} */
 
 * {
-  /* colors */
   --primary-color: #eeeeee !important;
   --secondary-color: #00162b !important;
   --card-color: #001e3b !important;
   --accent-color: #04f5fd !important;
   --focus-color: #5185e9 !important;
-
   /* sizes */
   --title: 3em;
   --icons: 2.2em;

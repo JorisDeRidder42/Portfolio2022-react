@@ -14,14 +14,23 @@
   --poppins: "Poppins", sans-serif;
   --Roboto: "Roboto Mono", monospace;
 }
-
+.react-switch-bg {
+  height: 1em;
+  width: 1.5em;
+  margin-left: 1em;
+  position: relative;
+  background: rgb(0, 0, 0);
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background 0.25s ease 0s;
+}
 .navigatiefont {
   position: relative;
   font-size: var(--navigation);
   font-family: var(--Roboto);
-  margin-left: 1.8em;
+  margin-left: 2em;
   transition: all 0.3s ease-in-out;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   text-decoration: none;
   cursor: pointer;
 }
@@ -52,6 +61,5 @@
 
 .color-nav {
   font-weight: var(--semi-bold);
-  background: rgba(0, 22, 43, 0.5);
-  box-shadow: 0 10px 30px -10px var(--shadow);
+  box-shadow: 0 10px 30px -10px var(--shadow) !important;
 }
