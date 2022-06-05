@@ -5,7 +5,7 @@
     rgba(0, 177, 245, 1) 50%,
     rgba(81, 133, 233, 1) 100%
   );
-  --gradient-old: rgb(4, 245, 253);
+  --accent-color: #04f5fd !important;
 
   --navigation: 1em;
   --secondary-color: #00162b !important;
@@ -20,15 +20,16 @@
   font-family: var(--Roboto);
   margin-left: 2em;
   color: var(--primary-color) !important;
+  border-bottom: 4px solid transparent;
   text-decoration: none;
   cursor: pointer;
 }
 .navigatiefont:hover {
   cursor: pointer;
-  border-bottom: 4px solid var(--gradient-old);
+  border-bottom: 3px solid var(--accent-color);
 }
 .active {
-  border-bottom: 4px solid var(--gradient-old);
+  border-bottom: 3px solid var(--accent-color);
 }
 
 .color-nav {

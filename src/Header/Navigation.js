@@ -7,7 +7,6 @@ import logo from "../assets/LOGO_JDR.png";
 
 const Navigation = () => {
   // const { theme } = useContext(ThemeContext);
-
   return (
     <div>
       <Navbar className="color-nav fixed-top" expand="lg" variant="dark">
@@ -26,27 +25,29 @@ const Navigation = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-100}
                 duration={500}
               >
                 <span className="numberNavigation">01.</span>over
               </Link>
               <Link
+                activeClass="active"
                 className="navigatiefont"
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-100}
                 duration={500}
               >
                 <span className="numberNavigation">02.</span>projecten
               </Link>
               <Link
+                activeClass="active"
                 className="navigatiefont"
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-60}
                 duration={500}
               >
                 <span className="numberNavigation">03.</span>contact

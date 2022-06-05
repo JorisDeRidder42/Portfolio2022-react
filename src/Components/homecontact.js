@@ -32,12 +32,12 @@ export const HomeContact = () => {
     e.target.reset();
   }
 
-  function onChange(value) {
-    console.log("Captcha value:", value);
-  }
+  // function onChange(value) {
+  //   console.log("Captcha value:", value);
+  // }
 
   return (
-    <div className="contact mt-5 pt-5">
+    <div className="contact my-5 py-5">
       <Container className="mt-5">
         <Row>
           <Col md={6}>
