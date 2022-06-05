@@ -12,7 +12,7 @@ const Home = () => {
     <div className="home bluebackground">
       <Container className="mt-5">
         <Row className="center">
-          <Col md={8}>
+          <Col md={6}>
             <div>
               <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
               <h1>
@@ -33,7 +33,7 @@ const Home = () => {
               </Link>
             </div>
           </Col>
-          <Col sm={4}>
+          <Col sm={6}>
             {/* <img src="assets/3dgraphic.png" alt="blocks" /> */}
           </Col>
         </Row>

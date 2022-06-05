@@ -40,10 +40,13 @@ const HomeAbout = () => {
             <Col md={6}>
               <p className="text-start mt-5 tekst">
                 Hallo, ik ben Joris De Ridder,
-                <strong>student programmeren</strong> te Thomas More.
+                <strong> student programmeren</strong> te Thomas More.
                 <br />
                 Ik heb een serieuze passie voor ontwerp en web
                 <br />
+                <br />
+                Ik ben geboren in februari 1997, het jaar van jurassic park 2 en
+                'titanic...'
                 <br />
                 Als ik niet aan het coderen ben, ben ik waarschijnlijk badminton
                 aan het spelen of een film of serie aan het bekijken.
