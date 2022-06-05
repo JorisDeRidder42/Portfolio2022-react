@@ -12,7 +12,7 @@ const Navigation = () => {
     <div>
       <Navbar className="color-nav fixed-top" expand="lg" variant="dark">
         <Container>
-          <Link to="home" spy={true} smooth={true} offset={-80} duration={500}>
+          <Link to="home" smooth={true} offset={-80} duration={500}>
             <Navbar.Brand>
               <Image src={logo} alt="LogoJDR" className="logo" />
             </Navbar.Brand>
@@ -21,6 +21,7 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Link
+                activeClass="active"
                 className="navigatiefont"
                 to="about"
                 spy={true}
@@ -30,7 +31,6 @@ const Navigation = () => {
               >
                 <span className="numberNavigation">01.</span>over
               </Link>
-
               <Link
                 className="navigatiefont"
                 to="projects"

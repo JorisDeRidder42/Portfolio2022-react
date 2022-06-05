@@ -17,7 +17,7 @@ const HomeAbout = () => {
         <Row>
           <Col md={6}>
             <h2 className="text-start">
-              <span className="numberTitle">01.</span>Over mij
+              <span className="numberTitle">01.</span>Wie ben ik?
             </h2>
           </Col>
           <Col md={6}>
@@ -45,12 +45,12 @@ const HomeAbout = () => {
                 Ik heb een serieuze passie voor ontwerp en web
                 <br />
                 <br />
-                Als ik niet aan het coderen ben, speel ik waarschijnlijk
-                badminton of kijk ik naar een film of serie.
+                Als ik niet aan het coderen ben, ben ik waarschijnlijk badminton
+                aan het spelen of een film of serie aan het bekijken.
               </p>
 
               <ul className="skills-list">
-                <li>Javascript (ES6+)</li>
+                <li>Javascript</li>
                 <li>React</li>
                 <li>Vue</li>
                 <li>Typescript</li>

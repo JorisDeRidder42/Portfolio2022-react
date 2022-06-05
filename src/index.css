@@ -20,6 +20,7 @@ dark {
   --card-color: #001e3b !important;
   --accent-color: #04f5fd !important;
   --focus-color: #5185e9 !important;
+
   /* sizes */
   --title: 3em;
   --icons: 2.2em;
@@ -30,7 +31,7 @@ dark {
   --small: 0.8em;
   --list: 0.7;
 
-  /* weigths */
+  /* weights */
   --bold: 700;
   --semi-bold: 600;
   --regular: 400;
@@ -46,6 +47,7 @@ dark {
   );
   --gradient-old: rgb(4, 245, 253);
 }
+
 .App {
   background-color: var(--secondary-color);
   height: 100vh;
@@ -62,16 +64,9 @@ dark {
 }
 
 .logo:hover {
-  transform: perspective(120deg);
+  transform: scale(1.2);
   transition: 0.5s ease-in-out;
   opacity: 1;
-}
-
-.link {
-  width: 100%;
-  max-width: 100vw;
-  padding-right: 0;
-  padding-left: 0;
 }
 
 /* 2 Home */
@@ -97,6 +92,7 @@ dark {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
+
 .skills-list li {
   color: var(--primary-color);
   list-style: none;
@@ -315,5 +311,5 @@ h5 {
   font-weight: var(--regular);
 }
 .form-control:focus {
-  background-color: var(--focus-color);
+  background-color: var(--card-color);
 }
