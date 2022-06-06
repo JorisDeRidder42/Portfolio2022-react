@@ -20,8 +20,8 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Link
-                activeClass="active"
                 className="navigatiefont"
+                activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
@@ -31,23 +31,23 @@ const Navigation = () => {
                 <span className="numberNavigation">01.</span>over
               </Link>
               <Link
-                activeClass="active"
                 className="navigatiefont"
+                activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-90}
                 duration={500}
               >
                 <span className="numberNavigation">02.</span>projecten
               </Link>
               <Link
-                activeClass="active"
                 className="navigatiefont"
+                activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-60}
+                offset={-90}
                 duration={500}
               >
                 <span className="numberNavigation">03.</span>contact

@@ -12,7 +12,7 @@ import profilePicture from "../assets/images/profielfoto.jpg";
 
 const HomeAbout = () => {
   return (
-    <div className="about mt-5 pt-5">
+    <div className="about my-5 py-5">
       <Container className="mt-5">
         <Row>
           <Col md={6}>
@@ -45,8 +45,8 @@ const HomeAbout = () => {
                 Ik heb een serieuze passie voor ontwerp en web
                 <br />
                 <br />
-                Ik ben geboren in februari 1997, het jaar van jurassic park 2 en
-                'titanic...'
+                Ik ben geboren in februari 1997, het jaar van jurassic park the
+                lost world en 'titanic...'
                 <br />
                 Als ik niet aan het coderen ben, ben ik waarschijnlijk badminton
                 aan het spelen of een film of serie aan het bekijken.

@@ -9,7 +9,7 @@ const Home = () => {
   // const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="home bluebackground">
+    <div className="home bluebackground mb-5">
       <Container className="mt-5">
         <Row className="center">
           <Col md={6}>
@@ -23,7 +23,7 @@ const Home = () => {
                 die gespecialiseerd is in het bouwen van uitzonderlijke digitale
                 ervaringen.
               </p>
-              <Link to="projects" offset={-120} duration={500}>
+              <Link to="projects" offset={-90} duration={500}>
                 <button
                   className="mt-4 px-5 py-3 btn btn-outline-primary"
                   href="#"
@@ -32,9 +32,6 @@ const Home = () => {
                 </button>
               </Link>
             </div>
-          </Col>
-          <Col sm={6}>
-            {/* <img src="assets/3dgraphic.png" alt="blocks" /> */}
           </Col>
         </Row>
       </Container>

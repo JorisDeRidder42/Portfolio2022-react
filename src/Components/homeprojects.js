@@ -7,7 +7,7 @@ import Pokedraw from "../assets/video/pokedraw.gif";
 
 const HomeProjects = () => {
   return (
-    <div className="projects mt-5 pt-5">
+    <div className="projects my-5 py-5">
       <Container className="mt-5">
         <Row>
           <Col md={6}>
