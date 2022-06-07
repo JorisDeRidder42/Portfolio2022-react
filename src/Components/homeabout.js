@@ -84,7 +84,7 @@ const HomeAbout = () => {
                       <FaLinkedin />
                     </a>
                     <a
-                      href="https://www.instagram.com/joris.dr/"
+                      href="https://www.instagram.com/jorisdrdesign/"
                       target="_blank"
                       rel="noreferrer"
                     >

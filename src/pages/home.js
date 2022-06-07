@@ -12,7 +12,7 @@ const Home = () => {
     <div className="home bluebackground mb-5">
       <Container className="mt-5">
         <Row className="center">
-          <Col md={6}>
+          <Col md={8}>
             <div>
               <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
               <h1>
@@ -33,6 +33,7 @@ const Home = () => {
               </Link>
             </div>
           </Col>
+          <Col md={4}></Col>
         </Row>
       </Container>
       <HomeAbout />
