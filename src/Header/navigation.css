@@ -20,7 +20,7 @@
   font-family: var(--Roboto);
   margin-left: 2em;
   color: var(--primary-color) !important;
-  border-bottom: 4px solid transparent;
+  border-bottom: 3px solid transparent;
   text-decoration: none;
   cursor: pointer;
 }

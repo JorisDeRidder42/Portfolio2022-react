@@ -2,13 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaDribbbleSquare,
-  FaGithubSquare,
-} from "react-icons/fa";
-import ReCAPTCHA from "react-google-recaptcha";
+import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
 
 export const HomeContact = () => {
   function sendEmail(e) {
@@ -32,17 +26,13 @@ export const HomeContact = () => {
     e.target.reset();
   }
 
-  // function onChange(value) {
-  //   console.log("Captcha value:", value);
-  // }
-
   return (
     <div className="contact my-5 py-5">
       <Container className="mt-5">
         <Row>
           <Col md={6}>
             <h2 className="text-start">
-              <span className="numberTitle">03.</span>Contact
+              <span className="numberTitle">03.</span>Neem contact op
             </h2>
           </Col>
         </Row>
@@ -93,12 +83,7 @@ export const HomeContact = () => {
                     name="Bericht"
                   />
                 </Form.Group>
-                {/* <ReCAPTCHA
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                  //change key before set online on hosting
-                  onChange={onChange}
-                  theme="dark"
-                /> */}
+
                 <input
                   type="submit"
                   variant="primary"

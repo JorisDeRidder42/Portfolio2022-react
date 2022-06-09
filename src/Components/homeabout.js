@@ -1,13 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaDribbbleSquare,
-  FaGithubSquare,
-} from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
 import profilePicture from "../assets/images/profielfoto.jpg";
 
 const HomeAbout = () => {
@@ -19,12 +13,6 @@ const HomeAbout = () => {
             <h2 className="text-start">
               <span className="numberTitle">01.</span>Wie ben ik?
             </h2>
-          </Col>
-          <Col md={6}>
-            <h3 className="quote">Less is more.</h3>
-            <p>
-              <em className="quoteName"> Ludwig Mies van der Rohe</em>
-            </p>
           </Col>
         </Row>
         <Container>

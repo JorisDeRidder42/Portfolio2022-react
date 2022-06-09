@@ -4,6 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import Tournament from "../assets/images/tournament.PNG";
 import Pokedraw from "../assets/video/pokedraw.gif";
+import { FaGithubSquare } from "react-icons/fa";
 
 const HomeProjects = () => {
   return (
@@ -12,13 +13,9 @@ const HomeProjects = () => {
         <Row>
           <Col md={6}>
             <h2 className="text-start">
-              <span className="numberTitle">02.</span>Mijn Projecten
+              <span className="numberTitle">02.</span>Enkele dingen die ik
+              gebouwd heb
             </h2>
-          </Col>
-          <Col md={6}>
-            <h3 className="quote">
-              My work is the bridge to digital experiences.
-            </h3>
           </Col>
         </Row>
         <Container className="my-5">
@@ -43,6 +40,14 @@ const HomeProjects = () => {
                     <li>MaterialDesign</li>
                     <li>C#</li>
                   </ul>
+                  <a
+                    href="https://github.com/JorisDeRidder42/DMProject_Toernooi"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icons-project"
+                  >
+                    <FaGithubSquare />
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
@@ -71,6 +76,14 @@ const HomeProjects = () => {
                     <li>Ionic</li>
                     <li>Pokemon API</li>
                   </ul>
+                  <a
+                    href="https://github.com/JorisDeRidder42/Pokedex/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icons-project"
+                  >
+                    <FaGithubSquare />
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
