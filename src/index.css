@@ -102,6 +102,10 @@ dark {
   width: 40%;
 }
 
+.card-text {
+  color: var(--primary-color);
+}
+
 h1 span {
   -webkit-text-fill-color: transparent;
   background: var(--gradient-old);
@@ -215,7 +219,6 @@ h5 {
 }
 .card {
   background-color: var(--card-color);
-  opacity: 75%;
   color: var(--primary-color);
   padding: 1.5em;
 }

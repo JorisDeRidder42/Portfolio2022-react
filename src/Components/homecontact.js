@@ -61,7 +61,7 @@ export const HomeContact = () => {
                       <Form.Control
                         type="email"
                         placeholder="Email"
-                        name="email"
+                        name="Email"
                       />
                     </Form.Group>
                   </Col>
