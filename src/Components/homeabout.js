@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import profilePicture from "../assets/images/profielfoto.jpg";
 
 const HomeAbout = () => {
@@ -20,24 +21,30 @@ const HomeAbout = () => {
             <Col md={6}>
               <Image
                 src={profilePicture}
-                className="profilePicture m-3 w-50"
+                className="profilePicture m-5 w-50"
                 alt="profilePicture"
                 fluid={true}
               />
             </Col>
             <Col md={6}>
               <p className="text-start mt-5 tekst">
-                Hallo, ik ben Joris De Ridder,
-                <strong> student programmeren</strong> te Thomas More.
+                Hallo, ik ben Joris De Ridder, student programmeren te Thomas
+                More.
                 <br />
-                Ik heb een serieuze passie voor ontwerp en web
+                <br />
+                Ik heb een serieuze passie voor grafisch design en websites.
+                <br />
+                <br />
+                Momenteel ben ik bezig aan mijn laatste jaar, hierna zou ik
+                graag willen werken als front-end developer.
                 <br />
                 <br />
                 Ik ben geboren in februari 1997, het jaar van jurassic park the
-                lost world en 'titanic...'
+                lost world, batman & robin en ook Men in black (zalige films).
+                <br />
                 <br />
                 Als ik niet aan het coderen ben, ben ik waarschijnlijk badminton
-                aan het spelen of een film of serie aan het bekijken.
+                aan het spelen of een film/serie aan het bekijken.
               </p>
 
               <ul className="skills-list">
@@ -50,14 +57,21 @@ const HomeAbout = () => {
                 <li>C#</li>
                 <li>.NET</li>
               </ul>
+              <hr />
+              <ul className="skills-list">
+                <li>Leergierig</li>
+                <li>Creatief</li>
+                <li>Behulpzaam</li>
+                <li>Goede luisteraar</li>
+                <li>Doorzetter</li>
+                <li>Gedisciplineerd</li>
+              </ul>
               <Row>
                 <Col md={6}>
                   <a
-                    href="../Cv_JorisDeRidder2022.pdf"
+                    href="../assets/CvJorisDeRidder2022.pdf"
                     className="mt-4 px-5' py-3 btn btn-outline-primary"
-                    target="_blank"
                     download
-                    rel="noopener noreferrer"
                   >
                     CV
                   </a>
