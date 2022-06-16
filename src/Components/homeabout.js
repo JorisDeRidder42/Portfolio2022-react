@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import profilePicture from "../assets/images/profielfoto.jpg";
 
 const HomeAbout = () => {
@@ -21,7 +20,7 @@ const HomeAbout = () => {
             <Col md={6}>
               <Image
                 src={profilePicture}
-                className="profilePicture m-5 w-50"
+                className="profilePicture m-5 w-75"
                 alt="profilePicture"
                 fluid={true}
               />
@@ -31,16 +30,14 @@ const HomeAbout = () => {
                 Hallo, ik ben Joris De Ridder, student programmeren te Thomas
                 More.
                 <br />
-                <br />
                 Ik heb een serieuze passie voor grafisch design en websites.
-                <br />
                 <br />
                 Momenteel ben ik bezig aan mijn laatste jaar, hierna zou ik
                 graag willen werken als front-end developer.
                 <br />
                 <br />
                 Ik ben geboren in februari 1997, het jaar van jurassic park the
-                lost world, batman & robin en ook Men in black (zalige films).
+                lost world, batman & robin en ook Men in black.
                 <br />
                 <br />
                 Als ik niet aan het coderen ben, ben ik waarschijnlijk badminton
