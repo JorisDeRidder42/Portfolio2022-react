@@ -66,7 +66,7 @@ const HomeAbout = () => {
               <Row>
                 <Col md={6}>
                   <a
-                    href="../assets/CvJorisDeRidder2022.pdf"
+                    href="../assets/CVJDR.pdf"
                     className="mt-4 px-5' py-3 btn btn-outline-primary"
                     download
                   >
