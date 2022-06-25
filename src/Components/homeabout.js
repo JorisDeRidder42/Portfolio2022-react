@@ -59,7 +59,7 @@ const HomeAbout = () => {
                 <li>Leergierig</li>
                 <li>Creatief</li>
                 <li>Behulpzaam</li>
-                <li>Goede luisteraar</li>
+                <li>Luisteraar</li>
                 <li>Doorzetter</li>
                 <li>Gedisciplineerd</li>
               </ul>

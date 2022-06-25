@@ -13,8 +13,8 @@ const HomeProjects = () => {
         <Row>
           <Col md={6}>
             <h2 className="text-start">
-              <span className="numberTitle">02.</span>Enkele dingen die ik
-              gebouwd heb
+              <span className="numberTitle">02.</span>Enkele dingen die ik heb
+              gemaakt
             </h2>
           </Col>
         </Row>

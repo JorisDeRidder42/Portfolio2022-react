@@ -28,8 +28,7 @@ dark {
   --subtitle: 1.5em;
   --quote: 1.4em;
   --body: 1em;
-  --small: 0.8em;
-  --list: 0.7;
+  --list: 0.8em;
 
   /* weights */
   --bold: 700;
@@ -95,6 +94,7 @@ dark {
 
 .skills-list li {
   color: var(--primary-color);
+  font-size: var(--list);
   list-style: none;
 }
 
