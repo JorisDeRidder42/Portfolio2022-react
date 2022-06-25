@@ -25,7 +25,7 @@ const Navigation = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-60}
+                offset={-100}
                 duration={500}
               >
                 <span className="numberNavigation">01.</span>over
@@ -36,7 +36,7 @@ const Navigation = () => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-100}
                 duration={500}
               >
                 <span className="numberNavigation">02.</span>projecten
@@ -47,7 +47,7 @@ const Navigation = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-100}
                 duration={500}
               >
                 <span className="numberNavigation">03.</span>contact

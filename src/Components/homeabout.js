@@ -6,7 +6,7 @@ import profilePicture from "../assets/images/profielfoto.jpg";
 
 const HomeAbout = () => {
   return (
-    <div className="about my-5 py-5">
+    <div className="about">
       <Container className="mt-5">
         <Row>
           <Col md={6}>
