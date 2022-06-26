@@ -13,7 +13,7 @@ const Home = () => {
       <Container className="mt-5">
         <Row className="center">
           <Col md={8}>
-            <div>
+            <div className="mx-3">
               <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
               <h1>
                 Ik <span>ontwerp</span> spullen voor het web

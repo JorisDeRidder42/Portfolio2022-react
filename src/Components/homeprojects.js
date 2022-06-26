@@ -19,9 +19,9 @@ const HomeProjects = () => {
           </Col>
         </Row>
         <Container className="my-5">
-          <Row>
-            <Col md={6}>
-              <Card className="mt-5 card">
+          <Card className="mt-5 card">
+            <Row>
+              <Col md={6}>
                 <Card.Body>
                   <Card.Subtitle className="mb-2 featured">
                     <h4 className="featured">Featured project</h4>
@@ -40,21 +40,19 @@ const HomeProjects = () => {
                     <li>MaterialDesign</li>
                     <li>C#</li>
                   </ul>
-                  <a
-                    href="https://github.com/JorisDeRidder42/DMProject_Toernooi"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icons-project"
+                  <button
+                    className="mt-4 py-3 btn btn-outline-primary"
+                    href="#"
                   >
-                    <FaGithubSquare />
-                  </a>
+                    Bekijk case studies
+                  </button>
                 </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Image src={Tournament} alt="tournament" fluid={true} />
-            </Col>
-          </Row>
+              </Col>
+              <Col md={6}>
+                <Image src={Tournament} alt="tournament" fluid={true} />
+              </Col>
+            </Row>
+          </Card>
         </Container>
         <Container className="my-5">
           <Row>
@@ -76,14 +74,6 @@ const HomeProjects = () => {
                     <li>Ionic</li>
                     <li>Pokemon API</li>
                   </ul>
-                  <a
-                    href="https://github.com/JorisDeRidder42/Pokedex/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icons-project"
-                  >
-                    <FaGithubSquare />
-                  </a>
                 </Card.Body>
               </Card>
             </Col>
