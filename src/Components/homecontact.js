@@ -31,9 +31,7 @@ export const HomeContact = () => {
       <Container className="mt-5">
         <Row>
           <Col md={6}>
-            <h2 className="text-start">
-              <span className="numberTitle">03.</span>Neem contact op
-            </h2>
+            <h2 className="text-start">Neem contact op</h2>
           </Col>
         </Row>
         <Container className="mt-5">
@@ -92,7 +90,7 @@ export const HomeContact = () => {
                 />
               </Col>
               <Col md={6}>
-                <Card className="mb-5 p-3 card">
+                <Card>
                   <Card.Body>
                     <ul className="contact-info">
                       <li>Joris De Ridder</li>

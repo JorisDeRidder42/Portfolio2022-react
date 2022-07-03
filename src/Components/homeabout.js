@@ -10,9 +10,7 @@ const HomeAbout = () => {
       <Container className="mt-5">
         <Row>
           <Col md={6}>
-            <h2 className="text-start">
-              <span className="numberTitle">01.</span>Wie ben ik?
-            </h2>
+            <h2 className="text-start">Wie ben ik?</h2>
           </Col>
         </Row>
         <Container>
@@ -53,15 +51,6 @@ const HomeAbout = () => {
                 <li>Wordpress</li>
                 <li>C#</li>
                 <li>.NET</li>
-              </ul>
-              <hr />
-              <ul className="skills-list">
-                <li>Leergierig</li>
-                <li>Creatief</li>
-                <li>Behulpzaam</li>
-                <li>Luisteraar</li>
-                <li>Doorzetter</li>
-                <li>Gedisciplineerd</li>
               </ul>
               <Row>
                 <Col md={6}>

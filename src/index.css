@@ -17,7 +17,7 @@ dark {
 * {
   --primary-color: #eeeeee !important;
   --secondary-color: #00162b !important;
-  --card-color: #001e3b !important;
+  --card-color: #000f1d !important;
   --accent-color: #04f5fd !important;
   --focus-color: #5185e9 !important;
 
@@ -104,6 +104,7 @@ dark {
 
 .card-text {
   color: var(--primary-color);
+  border-radius: 10%;
 }
 
 h1 span {
@@ -317,6 +318,7 @@ hr {
   background-color: var(--card-color);
   border: 2px solid var(--card-color);
   color: var(--accent-color);
+  padding: 15px;
 }
 .form-control::placeholder {
   color: var(--accent-color);
@@ -331,7 +333,23 @@ hr {
   background-color: var(--card-color);
   color: var(--primary-color);
 }
-
+.IconGithub {
+  font-size: var(--subtitle);
+  transition: 0.5s all ease-in-out;
+}
+.IconGithub:hover {
+  transition: 0.5s all ease-in-out;
+  color: var(--accent-color);
+}
+.iconLink {
+  color: var(--primary-color);
+  font-size: var(--subtitle);
+  transition: 0.5s all ease-in-out;
+}
+.iconLink :hover {
+  color: var(--accent-color);
+  transition: 0.5s all ease-in-out;
+}
 @media only screen and (max-width: 600px) {
   h5 {
     font-size: 1.2em;
