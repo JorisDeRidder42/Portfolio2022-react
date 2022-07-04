@@ -350,6 +350,11 @@ hr {
   color: var(--accent-color);
   transition: 0.5s all ease-in-out;
 }
+.projectNumber {
+  font-size: 3em;
+  color: var(--primary-color);
+  font-family: var(--poppins);
+}
 @media only screen and (max-width: 600px) {
   h5 {
     font-size: 1.2em;
