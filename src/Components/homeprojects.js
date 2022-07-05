@@ -6,7 +6,7 @@ import Tournament from "../assets/images/tournament.PNG";
 import Sarandonga from "../assets/images/sarandonga.PNG";
 import Pokemon from "../assets/video/pokedraw.gif";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import { project1 } from "../projects/projects";
+import { project, project1, project3 } from "../projects/projects";
 import { ProjectItem } from "./projectItem";
 
 const HomeProjects = (props) => {
@@ -21,9 +21,11 @@ const HomeProjects = (props) => {
         <Container>
           <Row>
             <Col md={6}>
-              <ProjectItem {...project1} />
+              <ProjectItem />
             </Col>
-            <Col md={6}></Col>
+            <Col md={6}>
+              <ProjectItem />
+            </Col>
           </Row>
         </Container>
 
