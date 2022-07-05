@@ -6,9 +6,10 @@ import Tournament from "../assets/images/tournament.PNG";
 import Sarandonga from "../assets/images/sarandonga.PNG";
 import Pokemon from "../assets/video/pokedraw.gif";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import { project } from "../projects/projects";
+import { project1 } from "../projects/projects";
+import { ProjectItem } from "./projectItem";
 
-const HomeProjects = () => {
+const HomeProjects = (props) => {
   return (
     <div className="projects my-5 py-5">
       <Container className="mt-5">
@@ -17,6 +18,14 @@ const HomeProjects = () => {
             <h2 className="text-start">Enkele dingen die ik heb gemaakt</h2>
           </Col>
         </Row>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <ProjectItem {...project1} />
+            </Col>
+            <Col md={6}></Col>
+          </Row>
+        </Container>
 
         {/* <Container className="my-5">
           <Row>
