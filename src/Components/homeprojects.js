@@ -8,6 +8,7 @@ import Pokemon from "../assets/video/pokedraw.gif";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { project, project1, project3 } from "../projects/projects";
 import { ProjectItem } from "./projectItem";
+import { ProjectImage } from "./projectImage";
 
 const HomeProjects = (props) => {
   return (
@@ -24,7 +25,7 @@ const HomeProjects = (props) => {
               <ProjectItem />
             </Col>
             <Col md={6}>
-              <ProjectItem />
+              <ProjectImage />
             </Col>
           </Row>
         </Container>

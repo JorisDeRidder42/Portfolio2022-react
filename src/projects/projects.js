@@ -1,10 +1,10 @@
-export const project = [
+export const Projects = [
   {
     title: "Tournament app",
     description:
       "Deze applicatie voor school is om ervoor te zorgen dat kinderen/jongeren zich gemakkelijk kunnen registreren voor een online spel. Alsnog kunnen ze een uur en toernooi kiezen van het gekozen spel.",
     image: "/src/assets/images/tournament.PNG",
-    tags: ["Mysql ", "MaterialDesign ", "C# "],
+    tags: ["Mysql", "MaterialDesign", "C#"],
     id: 1,
     link: "https://github.com/JorisDeRidder42/DMProject_Toernooi",
   },
@@ -15,6 +15,7 @@ export const project = [
     image: "/src/assets/video/pokedraw.gif",
     tags: ["Pokemon api", "Ionic"],
     id: 2,
+    link: "https://github.com/JorisDeRidder42/pokedrawing",
   },
   {
     title: "Sarandonga",
@@ -23,5 +24,6 @@ export const project = [
     image: "/src/assets/images/sarandonga.PNG",
     tags: ["HTML5", "CSS3", "Bootstrap"],
     id: 3,
+    link: "http://www.sarandonga.be/",
   },
 ];
