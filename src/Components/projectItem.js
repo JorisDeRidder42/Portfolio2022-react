@@ -1,15 +1,16 @@
-import { Card, Col, Container, Image, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import React from "react";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { Projects } from "../projects/projects";
 
-export const ProjectItem = () => {
+export const ProjectItem = (props) => {
   return (
     <Container>
       {Projects.map((project, key) => (
         <Row>
           <Col md={6}>
             <Card key={project.id} className="mt-5">
+              <h1 className="projectNumber">{project.id}</h1>
               <Card.Body>
                 <Card.Subtitle className="mb-2 featured">
                   <h4 className="featured">{project.featured}</h4>
@@ -18,7 +19,7 @@ export const ProjectItem = () => {
                   <h3>{project.title}</h3>
                 </Card.Title>
                 <Card.Text>{project.description}</Card.Text>
-
+                <p>{project.date}</p>
                 <ul className="mt-5 project-tech-list">
                   {project.tags.map((tag, key) => (
                     <li key={key}>{tag}</li>
@@ -36,8 +37,15 @@ export const ProjectItem = () => {
               </Card.Body>
             </Card>
           </Col>
+
           <Col md={6}>
-            <Image src={project.image} alt={project.alt} />
+            <div className="mt-5 project">
+              <img
+                src={project.image}
+                className="img-fluid"
+                alt={project.alt}
+              />
+            </div>
           </Col>
         </Row>
       ))}
