@@ -98,10 +98,6 @@ dark {
   list-style: none;
 }
 
-.video {
-  width: 40%;
-}
-
 .card-text {
   color: var(--primary-color);
   border-radius: 10%;
@@ -352,14 +348,14 @@ hr {
 }
 
 .projectNumber {
-  font-size: 5em;
+  font-size: 6em;
   position: absolute;
   top: 0;
   right: 0;
   color: var(--primary-color);
   font-family: var(--poppins);
   z-index: 100;
-  margin-top: -0.8em;
+  margin-top: -0.5em;
 }
 @media only screen and (max-width: 600px) {
   h5 {
@@ -367,8 +363,5 @@ hr {
   }
   h4 {
     font-size: 1em;
-  }
-  .video {
-    width: 100%;
   }
 }
