@@ -1,9 +1,9 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import React from "react";
-import { FiGithub } from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 import { Projects } from "../projects/projects";
 
-export const ProjectItem = (props) => {
+export const ProjectItem = () => {
   return (
     <Container>
       {Projects.map((project, key) => (
@@ -32,7 +32,7 @@ export const ProjectItem = (props) => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <FiGithub />
+                  <FiExternalLink />
                 </a>
               </Card.Body>
             </Card>
@@ -40,11 +40,13 @@ export const ProjectItem = (props) => {
 
           <Col md={6}>
             <div className="mt-5 project">
-              <img
-                src={project.image}
-                className="img-fluid"
-                alt={project.alt}
-              />
+              <a href={project.link} target="_blank" rel="noreferrer">
+                <img
+                  src={project.image}
+                  className="img-fluid"
+                  alt={project.alt}
+                />
+              </a>
             </div>
           </Col>
         </Row>

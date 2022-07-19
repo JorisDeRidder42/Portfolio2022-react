@@ -99,8 +99,7 @@ export const HomeContact = () => {
                       <li>0492/64.13.23</li>
 
                       <li>
-                        @
-                        <a href="mailto:Joris.42@hotmail.com">
+                        <a className="mail" href="mailto:Joris.42@hotmail.com">
                           Joris.42@hotmail.com
                         </a>
                       </li>

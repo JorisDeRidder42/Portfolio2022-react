@@ -15,7 +15,7 @@ dark {
 } */
 
 * {
-  --primary-color: #eeeeee !important;
+  --primary-color: #eee !important;
   --secondary-color: #00162b !important;
   --card-color: #000f1d !important;
   --accent-color: #04f5fd !important;
@@ -356,6 +356,10 @@ hr {
   font-family: var(--poppins);
   z-index: 100;
   margin-top: -0.5em;
+}
+.footer {
+  background-color: var(--card-color);
+  font-size: var(--body);
 }
 @media only screen and (max-width: 600px) {
   h5 {

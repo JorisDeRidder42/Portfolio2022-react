@@ -4,6 +4,7 @@ import HomeAbout from "../Components/homeabout";
 import HomeContact from "../Components/homecontact";
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "react-scroll/modules/components/Link";
+import Footer from "../Components/footer";
 
 const Home = () => {
   // const { theme } = useContext(ThemeContext);
@@ -39,6 +40,7 @@ const Home = () => {
       <HomeAbout />
       <HomeProjects />
       <HomeContact />
+      <Footer />
     </div>
   );
 };
