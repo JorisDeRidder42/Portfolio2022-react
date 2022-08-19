@@ -6,10 +6,10 @@ import { Projects } from "../projects/projects";
 export const ProjectItem = () => {
   return (
     <Container>
-      {Projects.map((project, key) => (
-        <Row>
+      {Projects.map((project) => (
+        <Row key={project.id}>
           <Col md={6}>
-            <Card key={project.id} className="mt-5">
+            <Card className="mt-5">
               <h1 className="projectNumber">{project.id}</h1>
               <Card.Body>
                 <Card.Subtitle className="mb-2 featured">

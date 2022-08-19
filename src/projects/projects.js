@@ -15,7 +15,7 @@ export const Projects = [
     title: "Pokedraw app",
     featured: true,
     description:
-      "Een applicatie die een pokemon-database heeft a.d.h.v. een pokemon api en waar je een willekeurige Pokémon kunt trekken en natekennen.",
+      "Een applicatie die een pokemon-database heeft a.d.h.v. een pokemon api en waar je een willekeurige Pokémon kunt ophalen en tekennen.",
     image: "../assets/images/phone.jpg",
     tags: ["Pokemon api", "Ionic"],
     alt: "Pokemon-drawing app",
