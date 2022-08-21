@@ -1,8 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
 import profilePicture from "../assets/images/profielfoto.jpg";
+import { Skills } from "../projects/skills";
 
 const HomeAbout = () => {
   return (
@@ -24,70 +25,70 @@ const HomeAbout = () => {
               />
             </Col>
             <Col md={6}>
-              <p className="text-start mt-5 tekst">
-                Hallo, ik ben Joris De Ridder, student programmeren te Thomas
-                More.
-                <br />
-                Ik heb een serieuze passie voor grafisch design en websites.
-                <br />
-                Momenteel ben ik bezig aan mijn laatste jaar, hierna zou ik
-                graag willen werken als front-end developer.
-                <br />
-                <br />
-                Ik ben geboren in februari 1997, het jaar van jurassic park the
-                lost world, batman & robin en ook Men in black.
-                <br />
-                <br />
-                Als ik niet aan het coderen ben, ben ik waarschijnlijk badminton
-                aan het spelen of een film/serie aan het bekijken.
-              </p>
+              <Card className="mt-5 p-5">
+                <p className="text-start tekst">
+                  Mijn naam is Joris De Ridder,{" "}
+                  <span>student programmeren</span> te Thomas More.
+                  <br />
+                  <br />
+                  Ik heb een serieuze passie voor{" "}
+                  <span>grafisch design en websites.</span>
+                  <br />
+                  Momenteel ben ik bezig aan mijn laatste jaar, hierna zou ik
+                  graag willen werken als <span>front-end developer.</span>
+                  <br />
+                  <br />
+                  Ik ben geboren in <span>februari 1997</span>, het jaar van
+                  jurassic park the lost world, batman & robin en ook Men in
+                  black.
+                  <br />
+                  <br />
+                  Als ik niet aan het coderen ben, ben ik waarschijnlijk
+                  badminton aan het spelen of een film/serie aan het bekijken.
+                </p>
 
-              <ul className="skills-list">
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Vue</li>
-                <li>Typescript</li>
-                <li>Ionic</li>
-                <li>Wordpress</li>
-                <li>C#</li>
-                <li>.NET</li>
-              </ul>
-              <Row>
-                <Col md={6}>
-                  <a
-                    href="../assets/CVJDR.pdf"
-                    className="mt-4 px-5' py-3 btn btn-outline-primary"
-                    download
-                  >
-                    CV
-                  </a>
-                </Col>
-                <Col md={6}>
-                  <div className="icons mt-4">
+                <ul className="skills-list">
+                  {Skills.map((skill, key) => (
+                    <li key={key}>{skill}</li>
+                  ))}
+                </ul>
+                <Row>
+                  <Col md={6}>
                     <a
-                      href="https://www.linkedin.com/in/joris-de-ridder-800363193/"
-                      target="_blank"
-                      rel="noreferrer"
+                      href="../assets/CVJDR.pdf"
+                      className="mt-4 px-5' py-3 btn btn-outline-primary"
+                      download
                     >
-                      <FaLinkedin />
+                      CV
                     </a>
-                    <a
-                      href="https://www.instagram.com/jorisdrdesign/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaInstagram />
-                    </a>
-                    <a
-                      href="https://github.com/JorisDeRidder42"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaGithubSquare />
-                    </a>
-                  </div>
-                </Col>
-              </Row>
+                  </Col>
+                  <Col md={6}>
+                    <div className="icons mt-4">
+                      <a
+                        href="https://www.linkedin.com/in/joris-de-ridder-800363193/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaLinkedin />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/jorisdrdesign/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaInstagram />
+                      </a>
+                      <a
+                        href="https://github.com/JorisDeRidder42"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGithubSquare />
+                      </a>
+                    </div>
+                  </Col>
+                </Row>
+              </Card>
             </Col>
           </Row>
         </Container>

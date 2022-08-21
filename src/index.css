@@ -159,6 +159,9 @@ h5 {
   font-family: var(--Roboto);
   color: var(--accent-color);
 }
+p span {
+  color: var(--accent-color);
+}
 
 .btn-outline-primary {
   transition: 0.3s ease-in-out;

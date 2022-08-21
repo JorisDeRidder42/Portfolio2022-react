@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectItem } from "./projectItem";
+import { ProjectList } from "./projectList";
 
 const HomeProjects = (props) => {
   return (
@@ -12,7 +12,7 @@ const HomeProjects = (props) => {
             <h2 className="text-start">Enkele dingen die ik heb gemaakt</h2>
           </Col>
         </Row>
-        <ProjectItem />
+        <ProjectList />
       </Container>
     </div>
   );
