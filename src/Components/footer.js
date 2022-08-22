@@ -7,11 +7,13 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={6}>
-            <p className="m-2">© 2022 jorisdrdesign – All rights reserved.</p>
+            <p className="m-2">
+              © 2022 jorisdrdesign – Alle rechten voorbehouden.
+            </p>
           </Col>
           <Col md={6}>
             <p className="m-2">
-              Designed and build by myself with adobe XD and React
+              Ontworpen en opgemaakt door mezelf met Adobe XD en React.
             </p>
           </Col>
         </Row>

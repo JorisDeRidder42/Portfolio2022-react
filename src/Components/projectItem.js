@@ -30,7 +30,8 @@ export const ProjectItem = (props) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            {props.project.link ? <FiExternalLink /> : <FiGithub />}
+            {props.project.link ? <FiExternalLink /> : ""}
+            {props.project.linkGithub ? <FiGithub /> : ""}
           </a>
         </Card.Body>
       </Card>

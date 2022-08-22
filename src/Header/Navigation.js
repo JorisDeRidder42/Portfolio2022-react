@@ -28,7 +28,7 @@ const Navigation = () => {
                 offset={-100}
                 duration={500}
               >
-                <span className="numberNavigation">01.</span>over
+                <span className="numberNavigation">01.</span>Over mij
               </Link>
               <Link
                 className="navigatiefont"
@@ -39,7 +39,7 @@ const Navigation = () => {
                 offset={-100}
                 duration={500}
               >
-                <span className="numberNavigation">02.</span>projecten
+                <span className="numberNavigation">02.</span>Projecten
               </Link>
               <Link
                 className="navigatiefont"
@@ -50,7 +50,7 @@ const Navigation = () => {
                 offset={-100}
                 duration={500}
               >
-                <span className="numberNavigation">03.</span>contact
+                <span className="numberNavigation">03.</span>Contact
               </Link>
             </Nav>
           </Navbar.Collapse>

@@ -7,17 +7,15 @@ import Link from "react-scroll/modules/components/Link";
 import Footer from "../Components/footer";
 
 const Home = () => {
-  // const { theme } = useContext(ThemeContext);
-
   return (
     <div className="home bluebackground mb-5">
       <Container className="mt-5">
         <Row className="center">
-          <Col md={8}>
+          <Col md={6}>
             <div className="mx-3">
               <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
               <h1>
-                Ik <span>ontwerp</span> spullen voor het web
+                Ik <span>ontwerp</span> applicaties voor het web
               </h1>
               <p className="mt-4">
                 Ik ben een student programmeren te <strong>Thomas More </strong>

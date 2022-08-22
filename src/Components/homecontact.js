@@ -39,8 +39,8 @@ export const HomeContact = () => {
             <Row>
               <Col md={6}>
                 <p>
-                  Find me on social-media, connect with me through this form or
-                  mail me.
+                  Vind mij op sociale media, connecteer met mij via dit
+                  formulier of via e-mail
                 </p>
                 <Row>
                   <Col md={6}>
@@ -55,7 +55,7 @@ export const HomeContact = () => {
                   </Col>
                   <Col md={6}>
                     <Form.Group className="mb-3">
-                      <Form.Label>Email addres*</Form.Label>
+                      <Form.Label>Email-adres*</Form.Label>
                       <Form.Control
                         type="email"
                         placeholder="Email"

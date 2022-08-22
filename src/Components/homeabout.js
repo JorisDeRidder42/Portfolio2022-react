@@ -27,20 +27,20 @@ const HomeAbout = () => {
             <Col md={6}>
               <Card className="mt-5 p-5">
                 <p className="text-start tekst">
-                  Mijn naam is Joris De Ridder,{" "}
-                  <span>student programmeren</span> te Thomas More.
+                  Mijn naam is Joris De Ridder,
+                  <span> student programmeren</span> te Thomas More.
                   <br />
                   <br />
-                  Ik heb een serieuze passie voor{" "}
-                  <span>grafisch design en websites.</span>
+                  Ik heb een serieuze passie voor
+                  <span> grafisch design en websites.</span>
                   <br />
-                  Momenteel ben ik bezig aan mijn laatste jaar, hierna zou ik
+                  Momenteel ben ik bezig aan mijn laatste jaar. Hierna zou ik
                   graag willen werken als <span>front-end developer.</span>
                   <br />
                   <br />
                   Ik ben geboren in <span>februari 1997</span>, het jaar van
-                  jurassic park the lost world, batman & robin en ook Men in
-                  black.
+                  Jurassic Park The Lost World, Batman & Robin en ook Men in
+                  Black.
                   <br />
                   <br />
                   Als ik niet aan het coderen ben, ben ik waarschijnlijk

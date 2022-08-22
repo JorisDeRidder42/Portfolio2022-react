@@ -16,7 +16,7 @@ export const Projects = [
     title: "Pokedraw app",
     featured: true,
     description:
-      "Een applicatie die een pokemon-database heeft a.d.h.v. een pokemon api en waar je een willekeurige Pokémon kunt ophalen en tekennen.",
+      "Een applicatie die een pokemon-database heeft a.d.h.v. een pokemon api en waar je een willekeurige Pokémon kunt ophalen en tekenen.",
     image: "../assets/images/phone.jpg",
     tags: ["Pokemon api", "Ionic"],
     alt: "Pokemon-drawing app",
@@ -29,8 +29,8 @@ export const Projects = [
     title: "Sarandonga",
     featured: false,
     description:
-      "Dit is een website ontworpen voor een dans gezelschap in Lint. Sarandonga geeft flamenco lessen aan kinderen, volwassenen en bejaarden, maar geeft ook optredens en workshops.",
-    image: "../assets/images/test.png",
+      "Dit is een website ontworpen voor een dansgezelschap in Lint. Sarandonga geeft flamencolessen aan kinderen, volwassenen en bejaarden, maar ook optredens en workshops.",
+    image: "../assets/images/sarandonga.png",
     tags: ["HTML5", "CSS3", "Javascript", "Bootstrap"],
     date: "2019-2020",
     alt: "Sarandonga website",
