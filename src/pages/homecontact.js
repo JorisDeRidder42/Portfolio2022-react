@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
+import { CardContact } from "../Components/cardContact";
 
 export const HomeContact = () => {
   function sendEmail(e) {
@@ -90,45 +90,7 @@ export const HomeContact = () => {
                 />
               </Col>
               <Col md={6}>
-                <Card>
-                  <Card.Body>
-                    <ul className="contact-info">
-                      <li>Joris De Ridder</li>
-                      <li>België, Antwerpen</li>
-                      <li>2547 Lint</li>
-                      <li>0492/64.13.23</li>
-
-                      <li>
-                        <a className="mail" href="mailto:Joris.42@hotmail.com">
-                          Joris.42@hotmail.com
-                        </a>
-                      </li>
-                      <li className="icons">
-                        <a
-                          href="https://www.linkedin.com/in/joris-de-ridder-800363193/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <FaLinkedin />
-                        </a>
-                        <a
-                          href="https://www.instagram.com/jorisdrdesign/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <FaInstagram />
-                        </a>
-                        <a
-                          href="https://github.com/JorisDeRidder42"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <FaGithubSquare />
-                        </a>
-                      </li>
-                    </ul>
-                  </Card.Body>
-                </Card>
+                <CardContact />
               </Col>
             </Row>
           </Form>

@@ -1,18 +1,23 @@
-import React from "react";
-import HomeProjects from "../Components/homeprojects";
-import HomeAbout from "../Components/homeabout";
-import HomeContact from "../Components/homecontact";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "react-scroll/modules/components/Link";
-import Footer from "../Components/footer";
+import Footer from "../Footer/footer";
+import HomeContact from "./homecontact";
+import HomeProjects from "./homeprojects";
+import HomeAbout from "./homeabout";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="home bluebackground mb-5">
       <Container className="mt-5">
         <Row className="center">
           <Col md={6}>
-            <div className="mx-3">
+            <div className="mx-3" data-aos="fade-up">
               <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
               <h1>
                 Ik <span>ontwerp</span> applicaties voor het web

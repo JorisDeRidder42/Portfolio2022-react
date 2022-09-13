@@ -4,12 +4,22 @@ import Container from "react-bootstrap/Container";
 import "./navigation.css";
 import { Link } from "react-scroll";
 import logo from "../assets/LOGO_JDR.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navigation = () => {
-  // const { theme } = useContext(ThemeContext);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
-      <Navbar className="color-nav fixed-top" expand="lg" variant="dark">
+      <Navbar
+        className="color-nav fixed-top"
+        data-aos="fade-down"
+        expand="lg"
+        variant="dark"
+      >
         <Container>
           <Link to="home" smooth={true} offset={-80} duration={500}>
             <Navbar.Brand>

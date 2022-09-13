@@ -362,13 +362,73 @@ hr {
 }
 .footer {
   background-color: var(--card-color);
-  font-size: var(--body);
+  font-size: var(--list);
 }
-@media only screen and (max-width: 600px) {
-  h5 {
-    font-size: 1.2em;
+/*Spinner*/
+.loader {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 10em;
+  width: 10em;
+  margin: 1em;
+  border: 0.6em rgba(0, 0, 0, 0.25) solid;
+  border-top: 0.6em var(--accent-color) solid;
+  border-right: 0.6em var(--primary-color) solid;
+  border-bottom: 0.6em var(--focus-color) solid;
+  border-left: 0.6em var(--card-color) solid;
+  border-radius: 50%;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  h4 {
-    font-size: 1em;
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-loader {
+  position: fixed;
+  -webkit-animation: spin-reverse 1s infinite linear;
+  animation: spin-reverse 1s infinite linear;
+}
+@-webkit-keyframes spin-reverse {
+  from {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin-reverse {
+  from {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }

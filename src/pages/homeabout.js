@@ -1,11 +1,17 @@
 import React from "react";
+import { useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
 import profilePicture from "../assets/images/profielfoto.jpg";
 import { Skills } from "../projects/skills";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HomeAbout = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="about">
       <Container className="mt-5">
@@ -25,7 +31,11 @@ const HomeAbout = () => {
               />
             </Col>
             <Col md={6}>
-              <Card className="mt-5 p-5">
+              <Card
+                className="mt-5 p-5"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+              >
                 <p className="text-start tekst">
                   Mijn naam is Joris De Ridder,
                   <span> student programmeren</span> te Thomas More.

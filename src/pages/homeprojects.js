@@ -1,9 +1,8 @@
 import React from "react";
-import "bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectList } from "./projectList";
+import { ProjectList } from "../Components/projectList";
 
-const HomeProjects = (props) => {
+const HomeProjects = () => {
   return (
     <div className="projects my-5 py-5">
       <Container className="mt-5">
