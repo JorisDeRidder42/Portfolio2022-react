@@ -17,7 +17,7 @@ const Home = () => {
       <Container className="mt-5">
         <Row className="center">
           <Col md={6}>
-            <div className="mx-3" data-aos="fade-up">
+            <div className="mx-3" data-aos="fade-up" data-aos-delay="300">
               <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
               <h1>
                 Ik <span>ontwerp</span> applicaties voor het web

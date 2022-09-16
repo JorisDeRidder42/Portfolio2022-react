@@ -1,4 +1,4 @@
-/*Css code Joris De Ridder*/
+/*Css code Joris DR*/
 /* light {
   --primary-color: #eeeeee !important;
   --secondary-color: #00162b !important;
@@ -15,18 +15,20 @@ dark {
 } */
 
 * {
-  --primary-color: #eee !important;
-  --secondary-color: #00162b !important;
-  --card-color: #000f1d !important;
-  --accent-color: #04f5fd !important;
-  --focus-color: #5185e9 !important;
+  /* colors */
+  --primary-color: #eee;
+  --secondary-color: #00162b;
+  --card-color: #000f1d;
+  --accent-color: #cc0e00;
+  --focus-color: #5185e9;
 
   /* sizes */
   --title: 3em;
-  --icons: 2.5em;
+  --subtitle: 2.5em;
+  --icons: 2.3em;
   --number: 2em;
-  --subtitle: 1.5em;
-  --quote: 1.3em;
+  --smalltitle: 1.5em;
+  --quote: 1.2em;
   --body: 1em;
   --list: 0.8em;
 
@@ -35,7 +37,7 @@ dark {
   --semi-bold: 600;
   --regular: 400;
 
-  /* font-famillies */
+  /* font-families */
   --poppins: "Poppins", sans-serif;
   --Roboto: "Roboto Mono", monospace;
   --gradient: linear-gradient(
@@ -57,7 +59,7 @@ dark {
 
 .logo {
   width: 4em;
-  padding: 0.3em;
+  padding: 0.5em;
   transition: 0.5s ease-in-out;
   opacity: 0.5;
 }
@@ -76,7 +78,7 @@ dark {
 }
 
 .skills-list li::before {
-  content: "\25AA"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  content: "\25AA"; /* Add content: \25AA is the CSS Code/unicode for a square */
   color: var(--accent-color); /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -88,8 +90,8 @@ dark {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
 }
 
 .skills-list li {
@@ -110,15 +112,15 @@ h1 span {
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: tekstanimatie 5s linear infinite;
+  animation: text-animation 5s linear infinite;
   line-height: 1.5em;
 }
-@keyframes tekstanimatie {
+@keyframes text-animation {
   0% {
     background-position: 0%;
   }
   100% {
-    background-position: 200%;
+    background-position: 100%;
   }
 }
 p {
@@ -126,6 +128,9 @@ p {
   font-size: var(--body);
   font-family: var(--poppins);
   color: var(--primary-color);
+}
+p span {
+  color: var(--accent-color);
 }
 ul li {
   font-weight: var(--list);
@@ -136,17 +141,23 @@ h1,
 h2,
 h4,
 h5 {
-  font-weight: var(--bold);
-  font-size: var(--title);
   font-family: var(--poppins);
   color: var(--primary-color);
   text-align: left;
 }
 h2 span {
-  color: #00ffff;
+  color: var(--accent-color);
 }
 h3 span {
-  color: #00ffff;
+  color: var(--accent-color);
+}
+h1 {
+  font-weight: var(--bold);
+  font-size: var(--title);
+}
+h2 {
+  font-weight: var(--bold);
+  font-size: var(--subtitle);
 }
 h4 {
   font-weight: var(--regular);
@@ -155,11 +166,8 @@ h4 {
 
 h5 {
   font-weight: var(--semi-bold);
-  font-size: var(--subtitle);
+  font-size: var(--smalltitle);
   font-family: var(--Roboto);
-  color: var(--accent-color);
-}
-p span {
   color: var(--accent-color);
 }
 
@@ -189,18 +197,12 @@ p span {
   color: var(--secondary-color);
   background-color: var(--accent-color);
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0 0 4px var(--focus-color);
+  box-shadow: 0 0 0 4px var(--secondary-color);
 }
 .numberNavigation {
   color: var(--accent-color);
   font-weight: var(--semi-bold);
   font-size: 1em;
-  font-family: var(--Roboto);
-}
-.numberTitle {
-  color: var(--accent-color);
-  font-weight: var(--semi-bold);
-  font-size: var(--small);
   font-family: var(--Roboto);
 }
 .contact a {
@@ -225,15 +227,6 @@ p span {
 hr {
   color: var(--primary-color);
   background-color: var(--primary-color);
-}
-
-.quote {
-  color: var(--primary-color);
-  font-family: var(--poppins);
-  font-size: var(--quote);
-}
-.shuttle {
-  position: absolute;
 }
 .featured {
   font-weight: var(--regular);
@@ -273,7 +266,7 @@ hr {
 }
 
 .form-label {
-  color: #00ffff;
+  color: var(--accent-color);
 }
 .contactbox {
   padding: 2em;
@@ -284,7 +277,7 @@ hr {
   color: #fff;
 }
 .contactbox a {
-  color: #00ffff;
+  color: var(--accent-color);
 }
 
 .icons a {
@@ -333,7 +326,7 @@ hr {
   color: var(--primary-color);
 }
 .IconGithub {
-  font-size: var(--subtitle);
+  font-size: var(--smalltitle);
   transition: 0.5s all ease-in-out;
 }
 .IconGithub:hover {
@@ -342,7 +335,7 @@ hr {
 }
 .iconLink {
   color: var(--primary-color);
-  font-size: var(--subtitle);
+  font-size: var(--smalltitle);
   transition: 0.5s all ease-in-out;
 }
 .iconLink :hover {
@@ -351,7 +344,7 @@ hr {
 }
 
 .projectNumber {
-  font-size: 6em;
+  font-size: 5em;
   position: absolute;
   top: 0;
   right: 0;
