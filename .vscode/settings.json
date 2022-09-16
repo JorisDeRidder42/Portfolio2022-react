@@ -1,0 +1,13 @@
+{
+    "workbench.colorCustomizations": {
+        "[One Dark Pro]": {
+            "titleBar.activeBackground": "#048aaccc",
+            "titleBar.activeForeground": "#ffffff",
+            "statusBar.background": "#048aaccc",
+            "statusBar.foreground": "#ffffff"
+        },
+        "activityBar.background": "#273023",
+        "titleBar.activeBackground": "#374331",
+        "titleBar.activeForeground": "#F8FAF8"
+    }
+}

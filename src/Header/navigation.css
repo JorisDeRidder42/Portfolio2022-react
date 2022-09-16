@@ -1,0 +1,41 @@
+* {
+  --gradient: linear-gradient(
+    to right,
+    rgba(4, 245, 253, 1) 0%,
+    rgba(0, 177, 245, 1) 50%,
+    rgba(81, 133, 233, 1) 100%
+  );
+  --accent-color: #04f5fd !important;
+
+  --navigation: 1em;
+  --secondary-color: #00162b !important;
+  --shadow: rgba(2, 12, 27, 0.7) !important;
+
+  --poppins: "Poppins", sans-serif;
+  --Roboto: "Roboto Mono", monospace;
+}
+.navigatiefont {
+  position: relative;
+  font-size: var(--navigation);
+  font-family: var(--Roboto);
+  margin-left: 2em;
+  color: var(--primary-color) !important;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navigatiefont:hover {
+  cursor: pointer;
+  border-bottom: 3px solid var(--accent-color);
+  transition: 0.5s ease-in-out;
+}
+.active {
+  border-bottom: 3px solid var(--accent-color);
+  transition: 0.5s ease-in-out;
+}
+
+.color-nav {
+  font-weight: var(--semi-bold);
+  box-shadow: 0 10px 30px -10px var(--shadow) !important;
+  background-color: rgba(0, 22, 43, 0.5);
+}

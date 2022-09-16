@@ -1,33 +1,50 @@
-import HomeProjects from "../Components/homeprojects";
-import HomeAbout from "../Components/homeabout";
-import HomeContact from "../Components/homecontact";
-import { Container, Row, Col } from 'react-bootstrap';
-import { LinkContainer } from "react-router-bootstrap";
+import React, { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Link from "react-scroll/modules/components/Link";
+import Footer from "../Footer/footer";
+import HomeContact from "./homecontact";
+import HomeProjects from "./homeprojects";
+import HomeAbout from "./homeabout";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
-    return(
-            <div className="bluebackground">
-                <Container>
-                        <Row className="midden">
-                            <Col md={6} className="mt-5">
-                                <div>
-                                    <h1 className="text-white">Need a new <span>design</span> for your business?</h1>
-                                    <h6 className="mt-2 text-white tekst">Hello there, my name is <span>Joris De Ridder</span>, I am a student <b>programmer</b> with knowledge of <b>UX/UI design</b> and <b>webdevelopment</b></h6>
-                                    <LinkContainer to={'/projects'}>
-                                        <button className="mt-4 px-5 py-3 btn btn-primary" a href="#">View my projects</button>
-                                    </LinkContainer>
-                                </div>
-                            </Col>
-                            <Col sm={6}>
-                                {/* <image src="../assets/profiel.jpg" className="img-fluid" alt="hoofd"/> */}
-                            </Col>
-                            <div className="mouse"></div>
-                        </Row>
-                    </Container>
-                <HomeAbout/>
-                <HomeProjects/>
-                <HomeContact/>
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  return (
+    <div className="home bluebackground mb-5">
+      <Container className="mt-5">
+        <Row className="center">
+          <Col md={6}>
+            <div className="mx-3" data-aos="fade-up" data-aos-delay="300">
+              <h5 className="mt-3">Hallo, mijn naam is Joris</h5>
+              <h1>
+                Ik <span>ontwerp</span> applicaties voor het web
+              </h1>
+              <p className="mt-4">
+                Ik ben een student programmeren te <strong>Thomas More </strong>
+                die gespecialiseerd is in het bouwen van uitzonderlijke digitale
+                ervaringen.
+              </p>
+              <Link to="projects" offset={-90} duration={500}>
+                <button
+                  className="mt-4 px-5 py-3 btn btn-outline-primary"
+                  href="#"
+                >
+                  Ontdek
+                </button>
+              </Link>
             </div>
-    )
-}
-export{Home};
+          </Col>
+          <Col md={4}></Col>
+        </Row>
+      </Container>
+      <HomeAbout />
+      <HomeProjects />
+      <HomeContact />
+      <Footer />
+    </div>
+  );
+};
+export { Home };
