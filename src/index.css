@@ -1,25 +1,10 @@
 /*Css code Joris DR*/
-/* light {
-  --primary-color: #eeeeee !important;
-  --secondary-color: #00162b !important;
-  --card-color: #f5f5f5 !important;
-  --accent-color: #04f5fd !important;
-  --focus-color: #5185e9 !important;
-}
-dark {
-  --primary-color: #00162b !important;
-  --secondary-color: #eeeeee !important;
-  --card-color: #001e3b !important;
-  --accent-color: #5185e9 !important;
-  --focus-color: #04f5fd !important;
-} */
-
 * {
   /* colors */
   --primary-color: #eee;
   --secondary-color: #00162b;
   --card-color: #000f1d;
-  --accent-color: #cc0e00;
+  --accent-color: #04f5fd;
   --focus-color: #5185e9;
 
   /* sizes */
@@ -128,6 +113,7 @@ p {
   font-size: var(--body);
   font-family: var(--poppins);
   color: var(--primary-color);
+  line-height: 1.5em;
 }
 p span {
   color: var(--accent-color);
